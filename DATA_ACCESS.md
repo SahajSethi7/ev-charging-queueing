@@ -1,17 +1,15 @@
-# Data access and redistribution
+# Data access
 
-Raw, cleaned, and session-level data are not distributed in this repository.
+The datasets used by this project are available from their original providers and are not duplicated in this repository.
 
-## Jiaxing dataset
+## Jiaxing EV charging transactions
 
-- Dataset DOI: <https://doi.org/10.6084/m9.figshare.28182251.v3>
-- Article DOI: <https://doi.org/10.1038/s41597-025-04982-1>
+Download version 3 of the dataset from its official Figshare record:
 
-The source describes the records as desensitized and anonymized, including randomly mapped user IDs. Nevertheless, the records retain detailed timestamps, charging locations/categories, payments, and longitudinal pseudonymous identifiers. Obtain the dataset from Figshare and follow the licence displayed on the dataset's own landing page.
+- [Dataset on Figshare](https://doi.org/10.6084/m9.figshare.28182251.v3)
+- [Associated Scientific Data article](https://doi.org/10.1038/s41597-025-04982-1)
 
-A Google Drive mirror is not included. Rehosting a cleaned derivative on Google Drive is still redistribution; add such a link only after confirming that the Figshare item licence permits redistribution of the derivative and that the shared file contains no fields beyond the intended research release.
-
-Expected primary files under `Data/`:
+The Figshare release provides the three source files required by the pipeline:
 
 ```text
 Charging_Data.csv
@@ -19,23 +17,55 @@ Weather_Data.csv
 Time-of-use_Price.csv
 ```
 
-The pipeline produces `jiaxing_clean.parquet`, `jiaxing_hourly.parquet`, `jiaxing_daily.parquet`, and `jiaxing_iat.parquet` locally.
+Create a `Data/` directory at the repository root and place the files there without renaming them:
 
-## ACN-Data
+```text
+ev-charging-queueing/
+├── Code/
+├── Data/
+│   ├── Charging_Data.csv
+│   ├── Weather_Data.csv
+│   └── Time-of-use_Price.csv
+└── Results/
+```
 
-- Official portal: <https://ev.caltech.edu/dataset.html>
-- Registration: <https://ev.caltech.edu/register>
+The records are described by the source authors as desensitized and anonymized, including randomly mapped user identifiers. Refer to the Figshare landing page for the dataset's current licence and citation information.
 
-ACN-Data access requires registration and agreement to educational/research use. This repository does not redistribute its session export. Download it directly from the provider when reproducing the cross-validation stage.
+Running the ingestion and Week 1 scripts creates the canonical local inputs used by later stages:
 
-## Public result boundary
+```text
+Data/jiaxing_clean.parquet
+Data/jiaxing_hourly.parquet
+Data/jiaxing_daily.parquet
+Data/jiaxing_iat.parquet
+```
 
-Published result files contain station-, configuration-, day-, or replication-level aggregates. The following private-workspace artifacts are deliberately excluded:
+```powershell
+python Code/ingest_jiaxing.py
+python Code/week1_wrapup.py
+```
 
-- raw and cleaned session tables;
-- ACN JSON/XLSX exports;
-- `flexibility_analysis.csv`;
-- `acn_flexibility.csv`;
-- `representative_days.csv`;
-- trained PyTorch pickle/checkpoint files;
-- provenance JSON containing absolute workstation paths.
+## ACN-Data cross-validation
+
+ACN-Data is used only for the external cross-validation analysis.
+
+- [Official ACN-Data portal](https://ev.caltech.edu/dataset.html)
+- [Registration and access](https://ev.caltech.edu/register)
+
+Download the JPL session export from the provider and save it as either:
+
+```text
+Data/acndata_sessions.json
+```
+
+or:
+
+```text
+Data/acn_jpl.json
+```
+
+Access requires registration and agreement to the provider's educational/research-use terms.
+
+## Included results
+
+The checked-in [`Results/`](Results/) directory contains the aggregate tables and figures needed to inspect the reported findings without downloading the session-level data or rerunning the complete pipeline.
