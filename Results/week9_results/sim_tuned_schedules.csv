@@ -1,0 +1,5 @@
+station,demand_scenario,heuristic_best_pw15,margin_needed,tuned_pw15,heuristic_ach_per_day,tuned_ach_per_day,ach_increase,status,tuned_schedule_peak,tuned_schedule_total
+Xiuzhou_Expressway Service District A,historical_avg,0.0292533873457234,0,0.0292533873457234,80.03557118829548,80.03557118829548,0.0,heuristic_sufficient,5,80
+Nanhu_Technology Park,historical_avg,0.0366699780138531,0,0.0366699780138531,109.09973798064418,109.09973798064418,0.0,heuristic_sufficient,6,109
+Xiuzhou_Government Agency,historical_avg,0.0423342896551144,0,0.0423342896551144,129.20762696991824,129.20762696991824,0.0,heuristic_sufficient,8,129
+Tongxiang_Bus Station,historical_avg,0.0638839473984984,1,0.02569986738271447,182.44826977161784,206.18934058534467,23.74107081372682,tuned,12,206

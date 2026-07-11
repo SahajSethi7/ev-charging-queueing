@@ -1,0 +1,84 @@
+{
+  "models": {
+    "last_week_same_hour": {
+      "mae": 1.9260718789407314,
+      "rmse": 2.9947410820974185,
+      "r2": 0.13292218623064356
+    },
+    "historical_mean": {
+      "mae": 1.8300509568982377,
+      "rmse": 2.823835323468717,
+      "r2": 0.22906414171544165
+    },
+    "xgboost": {
+      "mae": 1.517969053091367,
+      "rmse": 2.2558799916223307,
+      "r2": 0.5079927550808129,
+      "cv_mae": 1.2806864722783136,
+      "cv_mae_std": 0.11922070555132219
+    },
+    "lstm_h1": {
+      "mae": 1.5330864191055298,
+      "rmse": 2.3547699451446533,
+      "r2": 0.46257293224334717,
+      "n_params": 57216,
+      "best_epoch": 2,
+      "train_time_s": 758.2645609378815,
+      "note": "Horizon-1 only; comparable to XGBoost single-step."
+    },
+    "lstm_no_weather_h1": {
+      "mae": 1.5277413129806519,
+      "rmse": 2.3041584491729736,
+      "r2": 0.485426664352417
+    }
+  },
+  "lstm_all_horizon": {
+    "mae": 1.5423650741577148,
+    "rmse": 2.3601667881011963,
+    "r2": 0.4604671001434326,
+    "per_horizon_mae": [
+      1.5330864191055298,
+      1.5395073890686035,
+      1.542853832244873,
+      1.5479580163955688,
+      1.5515520572662354,
+      1.5463327169418335,
+      1.5429799556732178,
+      1.546307921409607,
+      1.5476471185684204,
+      1.5498210191726685,
+      1.550300121307373,
+      1.5471844673156738,
+      1.5436406135559082,
+      1.542199730873108,
+      1.5436375141143799,
+      1.5370502471923828,
+      1.5307570695877075,
+      1.5336298942565918,
+      1.536167025566101,
+      1.538883924484253,
+      1.5351738929748535,
+      1.5411744117736816,
+      1.540735125541687,
+      1.5481842756271362
+    ],
+    "note": "Average across all 24 forecast horizons. NOT directly comparable to XGBoost single-step metrics."
+  },
+  "lstm_vs_xgboost": {
+    "comparison_basis": "horizon-1 (single-step, apples-to-apples)",
+    "xgb_mae": 1.517969053091367,
+    "lstm_h1_mae": 1.5330864191055298,
+    "lstm_improvement_pct": -0.9958942169062049,
+    "lstm_wins": false,
+    "primary_model": "xgboost",
+    "note": "LSTM horizon-1 underperforms XGBoost by 1.0% MAE on the Sep-Dec 2021 test set (single-step comparison)."
+  },
+  "fleet_sizing_impact": "not_evaluated",
+  "fleet_sizing_impact_note": "The model comparison measures forecast accuracy only. Operational impact requires forecast-fed holdout simulation.",
+  "weather_ablation": {
+    "full_h1_mae": 1.5330864191055298,
+    "no_weather_h1_mae": 1.5277413129806519,
+    "weather_contribution_pct": -0.34865002117731236,
+    "note": "Removing weather features changes h1 MAE by -0.35%. Weather is negligible."
+  }
+}

@@ -1,0 +1,58 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# JavaScript
+node_modules/
+my-appcd/node_modules/
+my-appcd/dist/
+npm-debug.log*
+
+# Raw, cleaned, and row-level data
+Data/
+data/
+acndata_sessions.json
+*.parquet
+*.xlsx
+Results/**/flexibility_analysis.csv
+Results/**/acn_flexibility.csv
+Results/**/representative_days.csv
+
+# Models and machine-specific provenance
+*.pt
+*.pth
+Results/**/validation_provenance.json
+Results/**/week6_metadata.json
+
+# Legacy/private research material
+Reports/
+Plans/
+Reference/
+Results/eda_output/
+Results/output/
+
+# Editor, agent, and temporary state
+.vscode/
+.idea/
+.agents/
+.codex*/
+.pip_tmp/
+*.tmp
+*.log
+.DS_Store
+Thumbs.db

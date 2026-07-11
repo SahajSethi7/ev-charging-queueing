@@ -1,0 +1,20 @@
+solver_status,solution_status,solve_time_sec,is_feasible,is_optimal,n_sessions_nonfault,n_schedulable,n_likely_flexible,n_possibly_flexible,peak_slot_load,capacity_ratio,mean_wait_min,median_wait_min,p_wait_gt_15min,mean_utilization,tou_cost_yuan,objective,n_shifted,mean_shift_min,throughput,station_name,day_label,date_dt,n_chargers,n_sessions_total,n_fault_excluded
+Optimal,Optimal,0.04,True,True,39,7,5,2,4,1.0,27.975,24.9,0.7436,0.1649,344.15,tou_cost_min_with_delay_tiebreak,4,60.0,1.625,Xiuzhou_Expressway Service District A,high_demand_summer_weekday,2021-07-16,4,61,22
+Optimal,Optimal,0.04,True,True,4,0,0,0,1,0.25,14.983,14.358,0.5,0.0166,39.67,tou_cost_min_with_delay_tiebreak,0,0.0,0.167,Xiuzhou_Expressway Service District A,low_demand_winter_weekday,2021-02-11,4,10,6
+Optimal,Optimal,0.04,True,True,10,4,4,0,3,0.75,9.208,9.6,0.1,0.0339,91.2,tou_cost_min_with_delay_tiebreak,0,0.0,0.417,Xiuzhou_Expressway Service District A,rainy_day,2020-06-23,4,55,45
+Optimal,Optimal,0.04,True,True,35,9,0,9,4,1.0,18.362,18.8,0.5714,0.1658,484.99,tou_cost_min_with_delay_tiebreak,2,45.0,1.458,Xiuzhou_Expressway Service District A,holiday,2021-10-05,4,45,10
+Optimal,Optimal,0.03,True,True,5,1,1,0,2,0.5,15.877,13.217,0.4,0.0282,114.82,tou_cost_min_with_delay_tiebreak,0,0.0,0.208,Xiuzhou_Expressway Service District A,weekend,2020-06-28,4,6,1
+Optimal,Optimal,0.04,True,True,59,17,6,11,5,0.833,19.569,15.9,0.5254,0.3635,881.43,tou_cost_min_with_delay_tiebreak,3,100.0,2.458,Nanhu_Technology Park,high_demand_summer_weekday,2021-07-16,6,62,0
+Optimal,Optimal,0.04,True,True,28,11,3,8,4,0.667,19.722,18.6,0.5357,0.2393,413.57,tou_cost_min_with_delay_tiebreak,2,60.0,1.167,Nanhu_Technology Park,low_demand_winter_weekday,2021-02-11,6,31,1
+Optimal,Optimal,0.04,True,True,53,22,13,9,6,1.0,16.6,14.417,0.4528,0.3775,723.69,tou_cost_min_with_delay_tiebreak,1,90.0,2.208,Nanhu_Technology Park,rainy_day,2020-06-23,6,58,2
+Optimal,Optimal,0.04,True,True,69,18,6,12,6,1.0,16.538,14.033,0.4928,0.3742,875.35,tou_cost_min_with_delay_tiebreak,1,60.0,2.875,Nanhu_Technology Park,weekend,2020-06-28,6,72,0
+Optimal,Optimal,0.05,True,True,66,17,9,8,8,1.0,26.952,21.633,0.6515,0.705,1288.56,tou_cost_min_with_delay_tiebreak,7,77.1,2.75,Xiuzhou_Government Agency,high_demand_summer_weekday,2021-07-16,8,79,5
+Optimal,Optimal,0.03,True,True,15,4,1,3,2,0.25,18.41,16.75,0.6,0.0492,200.85,tou_cost_min_with_delay_tiebreak,1,60.0,0.625,Xiuzhou_Government Agency,low_demand_winter_weekday,2021-02-11,8,18,3
+Optimal,Optimal,0.04,True,True,52,16,7,9,8,1.0,20.16,19.092,0.6346,0.2893,641.8,tou_cost_min_with_delay_tiebreak,4,45.0,2.167,Xiuzhou_Government Agency,rainy_day,2020-06-23,8,60,2
+Optimal,Optimal,0.05,True,True,71,29,11,18,8,1.0,23.778,21.983,0.6338,0.5926,1351.07,tou_cost_min_with_delay_tiebreak,5,72.0,2.958,Xiuzhou_Government Agency,holiday,2021-10-05,8,87,8
+Optimal,Optimal,0.04,True,True,59,20,9,11,8,1.0,15.877,15.35,0.5254,0.4823,782.49,tou_cost_min_with_delay_tiebreak,1,30.0,2.458,Xiuzhou_Government Agency,weekend,2020-06-28,8,73,6
+Optimal,Optimal,0.04,True,True,118,36,24,12,10,1.0,22.206,17.183,0.5932,0.5348,1737.06,tou_cost_min_with_delay_tiebreak,12,52.5,4.917,Tongxiang_Bus Station,high_demand_summer_weekday,2021-07-16,10,142,17
+Optimal,Optimal,0.04,True,True,18,10,4,6,4,0.4,31.145,20.625,0.6111,0.1407,238.44,tou_cost_min_with_delay_tiebreak,4,75.0,0.75,Tongxiang_Bus Station,low_demand_winter_weekday,2021-02-11,10,23,3
+Optimal,Optimal,0.04,True,True,44,11,5,6,8,0.8,13.059,13.067,0.3636,0.322,603.57,tou_cost_min_with_delay_tiebreak,1,30.0,1.833,Tongxiang_Bus Station,rainy_day,2020-06-23,10,53,3
+Optimal,Optimal,0.04,True,True,99,30,15,15,10,1.0,21.182,17.1,0.596,0.4736,1413.23,tou_cost_min_with_delay_tiebreak,8,71.2,4.125,Tongxiang_Bus Station,holiday,2021-10-05,10,112,7
+Optimal,Optimal,0.04,True,True,64,24,11,13,6,0.6,18.414,15.708,0.5156,0.2872,878.39,tou_cost_min_with_delay_tiebreak,4,67.5,2.667,Tongxiang_Bus Station,weekend,2020-06-28,10,75,7

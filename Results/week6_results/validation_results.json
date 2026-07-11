@@ -1,0 +1,42 @@
+{
+  "moderate_load": {
+    "analytical_p_wait": 0.23615160349854236,
+    "analytical_mean_wait": 7.084548104956273,
+    "simulated_mean_wait": 7.0349281961068915,
+    "simulated_mean_util": 0.5990536918115213,
+    "analytical_rho": 0.6,
+    "label": "moderate_load",
+    "s": 5,
+    "lambda": 3.0,
+    "wait_error_pct": 0.7003962442525846,
+    "util_error": 0.0009463081884786284,
+    "pass": true
+  },
+  "high_load": {
+    "analytical_p_wait": 0.5541125541125542,
+    "analytical_mean_wait": 33.24675324675326,
+    "simulated_mean_wait": 33.32418117997611,
+    "simulated_mean_util": 0.7995922700400129,
+    "analytical_rho": 0.8,
+    "label": "high_load",
+    "s": 5,
+    "lambda": 4.0,
+    "wait_error_pct": 0.2328887053968542,
+    "util_error": 0.00040772995998716866,
+    "pass": true
+  },
+  "large_system": {
+    "analytical_p_wait": 0.35698108587868016,
+    "analytical_mean_wait": 10.709432576360408,
+    "simulated_mean_wait": 10.593056960348171,
+    "simulated_mean_util": 0.749599284717903,
+    "analytical_rho": 0.75,
+    "label": "large_system",
+    "s": 8,
+    "lambda": 6.0,
+    "wait_error_pct": 1.0866646312253698,
+    "util_error": 0.00040071528209695284,
+    "pass": true
+  },
+  "all_pass": true
+}

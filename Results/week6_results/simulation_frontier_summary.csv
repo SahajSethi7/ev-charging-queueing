@@ -1,0 +1,61 @@
+station,n_chargers,metric_family,metric_name,sim_utilization,sim_p_wait_gt_15min,sim_p_wait_gt_15min_ci95,sim_p_wait_gt_15min_upper95,sim_mean_wait_min,same_metric_basis
+Xiuzhou_Expressway Service District A,2,simulation_full_day_nhpp,p_wait_gt_15min,0.493020495059235,0.42238245356786897,0.012517251368441971,0.4348997049363109,51.680256260153044,fleet-frontier rows are comparable to each other
+Xiuzhou_Expressway Service District A,4,simulation_full_day_nhpp,p_wait_gt_15min,0.24658200648408785,0.03744991061342648,0.0044737517968322866,0.041923662410258765,1.858506397860615,fleet-frontier rows are comparable to each other
+Xiuzhou_Expressway Service District A,6,simulation_full_day_nhpp,p_wait_gt_15min,0.16438939334304334,0.0017960336758546488,0.001105680287076811,0.0029017139629314596,0.09595264197378015,fleet-frontier rows are comparable to each other
+Xiuzhou_Expressway Service District A,8,simulation_full_day_nhpp,p_wait_gt_15min,0.12329204500728247,9.433962264150943e-05,0.0001849056603773585,0.0002792452830188679,0.0044936525800691185,fleet-frontier rows are comparable to each other
+Xiuzhou_Expressway Service District A,10,simulation_full_day_nhpp,p_wait_gt_15min,0.09863363600582595,0.0,0.0,0.0,8.970564265459784e-05,fleet-frontier rows are comparable to each other
+Xiuzhou_Expressway Service District A,12,simulation_full_day_nhpp,p_wait_gt_15min,0.08219469667152168,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Xiuzhou_Expressway Service District A,14,simulation_full_day_nhpp,p_wait_gt_15min,0.07045259714701854,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Xiuzhou_Expressway Service District A,16,simulation_full_day_nhpp,p_wait_gt_15min,0.061646022503641235,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Xiuzhou_Expressway Service District A,18,simulation_full_day_nhpp,p_wait_gt_15min,0.054796464447681104,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Xiuzhou_Expressway Service District A,20,simulation_full_day_nhpp,p_wait_gt_15min,0.049316818002912974,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Xiuzhou_Expressway Service District A,22,simulation_full_day_nhpp,p_wait_gt_15min,0.04483347091173908,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Xiuzhou_Expressway Service District A,24,simulation_full_day_nhpp,p_wait_gt_15min,0.04109734833576084,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Xiuzhou_Expressway Service District A,26,simulation_full_day_nhpp,p_wait_gt_15min,0.037936013848394616,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Xiuzhou_Expressway Service District A,28,simulation_full_day_nhpp,p_wait_gt_15min,0.03522629857350927,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Xiuzhou_Expressway Service District A,30,simulation_full_day_nhpp,p_wait_gt_15min,0.03287787866860866,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Nanhu_Technology Park,2,simulation_full_day_nhpp,p_wait_gt_15min,0.9018050448157653,0.8735894429429696,0.01552933896774427,0.8891187819107138,450.9853453726503,fleet-frontier rows are comparable to each other
+Nanhu_Technology Park,4,simulation_full_day_nhpp,p_wait_gt_15min,0.45290332491398716,0.16420796666028914,0.009933276367739975,0.1741412430280291,10.825317863260125,fleet-frontier rows are comparable to each other
+Nanhu_Technology Park,6,simulation_full_day_nhpp,p_wait_gt_15min,0.30205587829699043,0.015206573889531838,0.002532519081856543,0.01773909297138838,0.6651277915467676,fleet-frontier rows are comparable to each other
+Nanhu_Technology Park,8,simulation_full_day_nhpp,p_wait_gt_15min,0.22654345476806978,0.0010082554023749773,0.0004916801516959774,0.0014999355540709547,0.044603437039024384,fleet-frontier rows are comparable to each other
+Nanhu_Technology Park,10,simulation_full_day_nhpp,p_wait_gt_15min,0.18123458868778097,1.6666666666666667e-05,3.266666666666667e-05,4.933333333333334e-05,0.0015544330034009779,fleet-frontier rows are comparable to each other
+Nanhu_Technology Park,12,simulation_full_day_nhpp,p_wait_gt_15min,0.15102882390648406,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Nanhu_Technology Park,14,simulation_full_day_nhpp,p_wait_gt_15min,0.12945327763412925,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Nanhu_Technology Park,16,simulation_full_day_nhpp,p_wait_gt_15min,0.11327161792986307,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Nanhu_Technology Park,18,simulation_full_day_nhpp,p_wait_gt_15min,0.1006858826043227,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Nanhu_Technology Park,20,simulation_full_day_nhpp,p_wait_gt_15min,0.09061729434389049,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Nanhu_Technology Park,22,simulation_full_day_nhpp,p_wait_gt_15min,0.08237935849444586,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Nanhu_Technology Park,24,simulation_full_day_nhpp,p_wait_gt_15min,0.07551441195324203,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Nanhu_Technology Park,26,simulation_full_day_nhpp,p_wait_gt_15min,0.06970561103376186,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Nanhu_Technology Park,28,simulation_full_day_nhpp,p_wait_gt_15min,0.06472663881706463,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Nanhu_Technology Park,30,simulation_full_day_nhpp,p_wait_gt_15min,0.060411529562593644,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Xiuzhou_Government Agency,2,simulation_full_day_nhpp,p_wait_gt_15min,0.9997155483952314,0.999339161166784,0.0012071762054298607,1.0005463373722139,5659.317961917756,fleet-frontier rows are comparable to each other
+Xiuzhou_Government Agency,4,simulation_full_day_nhpp,p_wait_gt_15min,0.610322832338811,0.39250292627827965,0.012262583666539225,0.40476550994481886,36.714102415873924,fleet-frontier rows are comparable to each other
+Xiuzhou_Government Agency,6,simulation_full_day_nhpp,p_wait_gt_15min,0.4068682920286533,0.0669639816855052,0.005969299344209685,0.07293328102971489,3.2623802362394216,fleet-frontier rows are comparable to each other
+Xiuzhou_Government Agency,8,simulation_full_day_nhpp,p_wait_gt_15min,0.30517981055759386,0.0060738409880661546,0.0012989245573237144,0.0073727655453898686,0.27523694709288643,fleet-frontier rows are comparable to each other
+Xiuzhou_Government Agency,10,simulation_full_day_nhpp,p_wait_gt_15min,0.24414510136782552,0.00039760703503327654,0.0002435941391188005,0.000641201174152077,0.021884906781520316,fleet-frontier rows are comparable to each other
+Xiuzhou_Government Agency,12,simulation_full_day_nhpp,p_wait_gt_15min,0.2034542511398545,1.3054830287206266e-05,2.558746736292428e-05,3.864229765013054e-05,0.0019600160006784644,fleet-frontier rows are comparable to each other
+Xiuzhou_Government Agency,14,simulation_full_day_nhpp,p_wait_gt_15min,0.17438935811987533,0.0,0.0,0.0,0.00016449418982056595,fleet-frontier rows are comparable to each other
+Xiuzhou_Government Agency,16,simulation_full_day_nhpp,p_wait_gt_15min,0.15259068835489098,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Xiuzhou_Government Agency,18,simulation_full_day_nhpp,p_wait_gt_15min,0.1356361674265698,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Xiuzhou_Government Agency,20,simulation_full_day_nhpp,p_wait_gt_15min,0.12207255068391276,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Xiuzhou_Government Agency,22,simulation_full_day_nhpp,p_wait_gt_15min,0.11097504607628433,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Xiuzhou_Government Agency,24,simulation_full_day_nhpp,p_wait_gt_15min,0.10172712556992725,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Xiuzhou_Government Agency,26,simulation_full_day_nhpp,p_wait_gt_15min,0.0939019620645483,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Xiuzhou_Government Agency,28,simulation_full_day_nhpp,p_wait_gt_15min,0.08719467905993766,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Xiuzhou_Government Agency,30,simulation_full_day_nhpp,p_wait_gt_15min,0.08138170045594188,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Tongxiang_Bus Station,2,simulation_full_day_nhpp,p_wait_gt_15min,1.0,1.0,0.0,1.0,17807.171078863616,fleet-frontier rows are comparable to each other
+Tongxiang_Bus Station,4,simulation_full_day_nhpp,p_wait_gt_15min,0.9984134387529078,0.9974117342999665,0.002196988489765432,0.999608722789732,2461.460233961558,fleet-frontier rows are comparable to each other
+Tongxiang_Bus Station,6,simulation_full_day_nhpp,p_wait_gt_15min,0.7164964242130715,0.4936705348649585,0.013361328339982218,0.5070318632049408,50.74007867841146,fleet-frontier rows are comparable to each other
+Tongxiang_Bus Station,8,simulation_full_day_nhpp,p_wait_gt_15min,0.537625964008661,0.1494556864010189,0.009399611735751464,0.15885529813677035,8.166974231854585,fleet-frontier rows are comparable to each other
+Tongxiang_Bus Station,10,simulation_full_day_nhpp,p_wait_gt_15min,0.4302003833462182,0.028537205979691206,0.003332169704377461,0.03186937568406867,1.2414222950674423,fleet-frontier rows are comparable to each other
+Tongxiang_Bus Station,12,simulation_full_day_nhpp,p_wait_gt_15min,0.3585128106926901,0.003763335176530458,0.000830025029238292,0.00459336020576875,0.1789658675538044,fleet-frontier rows are comparable to each other
+Tongxiang_Bus Station,14,simulation_full_day_nhpp,p_wait_gt_15min,0.3072987144287195,0.00038232461892722655,0.0002240668573869765,0.0006063914763142031,0.02304322516603625,fleet-frontier rows are comparable to each other
+Tongxiang_Bus Station,16,simulation_full_day_nhpp,p_wait_gt_15min,0.2688867258000796,2.4053398435188998e-05,2.6660812894548406e-05,5.0714211329737404e-05,0.002688386456867212,fleet-frontier rows are comparable to each other
+Tongxiang_Bus Station,18,simulation_full_day_nhpp,p_wait_gt_15min,0.23901042599448832,0.0,0.0,0.0,8.054204782580326e-05,fleet-frontier rows are comparable to each other
+Tongxiang_Bus Station,20,simulation_full_day_nhpp,p_wait_gt_15min,0.21510938339503965,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Tongxiang_Bus Station,22,simulation_full_day_nhpp,p_wait_gt_15min,0.19555398490458148,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Tongxiang_Bus Station,24,simulation_full_day_nhpp,p_wait_gt_15min,0.17925781949586636,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Tongxiang_Bus Station,26,simulation_full_day_nhpp,p_wait_gt_15min,0.16546875645772274,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Tongxiang_Bus Station,28,simulation_full_day_nhpp,p_wait_gt_15min,0.15364955956788548,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other
+Tongxiang_Bus Station,30,simulation_full_day_nhpp,p_wait_gt_15min,0.1434062555966929,0.0,0.0,0.0,0.0,fleet-frontier rows are comparable to each other

@@ -1,0 +1,41 @@
+{
+  "dates": {
+    "high_demand_summer_weekday": "2021-07-16",
+    "low_demand_winter_weekday": "2021-02-11",
+    "rainy_day": "2020-06-23",
+    "holiday": "2021-10-05",
+    "weekend": "2020-06-28"
+  },
+  "selection_criteria": "high_demand_summer_weekday: weekday Jun-Aug 2021, max arrivals; low_demand_winter_weekday: weekday Dec 2020-Feb 2021, min arrivals; rainy_day: is_rainy=True, closest to median demand; holiday: CNY or National Day 2021, closest to median demand; weekend: Sat/Sun, closest to median weekend demand.",
+  "sessions_per_day": {
+    "2020-06-23": {
+      "Nanhu_Technology Park": 55,
+      "Tongxiang_Bus Station": 47,
+      "Xiuzhou_Expressway Service District A": 55,
+      "Xiuzhou_Government Agency": 54
+    },
+    "2020-06-28": {
+      "Nanhu_Technology Park": 69,
+      "Tongxiang_Bus Station": 71,
+      "Xiuzhou_Expressway Service District A": 6,
+      "Xiuzhou_Government Agency": 65
+    },
+    "2021-02-11": {
+      "Nanhu_Technology Park": 29,
+      "Tongxiang_Bus Station": 21,
+      "Xiuzhou_Expressway Service District A": 10,
+      "Xiuzhou_Government Agency": 18
+    },
+    "2021-07-16": {
+      "Nanhu_Technology Park": 59,
+      "Tongxiang_Bus Station": 135,
+      "Xiuzhou_Expressway Service District A": 61,
+      "Xiuzhou_Government Agency": 71
+    },
+    "2021-10-05": {
+      "Tongxiang_Bus Station": 106,
+      "Xiuzhou_Expressway Service District A": 45,
+      "Xiuzhou_Government Agency": 79
+    }
+  }
+}

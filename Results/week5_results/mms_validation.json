@@ -1,0 +1,7 @@
+{
+  "analytical_p_wait": 0.23615160349854236,
+  "analytical_mean_wait": 7.084548104956273,
+  "simulated_mean_wait": 7.035134646924056,
+  "simulated_mean_util": 0.5993913484640198,
+  "analytical_rho": 0.6
+}

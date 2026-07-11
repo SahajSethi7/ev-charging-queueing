@@ -1,0 +1,16 @@
+==================================================
+LOOKUP REGRESSION / ROBUSTNESS SUMMARY
+==================================================
+Total configs:  10
+PASS:           10
+FAIL:           0
+SKIP:           0
+
+Criteria:
+  Utilization: relative error <10%
+  P(W>15): relative error <10% when >= 2%
+  Near-zero P(W>15): absolute error <0.5 pp AND relative error <25%
+
+Total SimPy runtime: 119s (2.0 min)
+
+Overall: PASS

@@ -1,0 +1,39 @@
+station_name,day_label,metric,fcfs_value,lp_value,greedy_value
+Xiuzhou_Expressway Service District A,rainy_day,mean_wait_min,0.0,9.208,0.0
+Xiuzhou_Expressway Service District A,rainy_day,p_wait_gt_15min,0.0,0.1,0.0
+Xiuzhou_Expressway Service District A,weekend,mean_wait_min,0.0,15.877,0.0
+Xiuzhou_Expressway Service District A,weekend,p_wait_gt_15min,0.0,0.4,0.0
+Xiuzhou_Expressway Service District A,low_demand_winter_weekday,mean_wait_min,0.0,14.983,0.0
+Xiuzhou_Expressway Service District A,low_demand_winter_weekday,p_wait_gt_15min,0.0,0.5,0.0
+Xiuzhou_Expressway Service District A,high_demand_summer_weekday,mean_wait_min,0.0,27.975,0.0
+Xiuzhou_Expressway Service District A,high_demand_summer_weekday,p_wait_gt_15min,0.0,0.7436,0.0
+Xiuzhou_Expressway Service District A,holiday,mean_wait_min,0.0,18.362,0.0
+Xiuzhou_Expressway Service District A,holiday,p_wait_gt_15min,0.0,0.5714,0.0
+Nanhu_Technology Park,rainy_day,mean_wait_min,0.0,16.6,0.0
+Nanhu_Technology Park,rainy_day,p_wait_gt_15min,0.0,0.4528,0.0
+Nanhu_Technology Park,weekend,mean_wait_min,0.0,16.538,0.0
+Nanhu_Technology Park,weekend,p_wait_gt_15min,0.0,0.4928,0.0
+Nanhu_Technology Park,low_demand_winter_weekday,mean_wait_min,0.0,19.722,0.0
+Nanhu_Technology Park,low_demand_winter_weekday,p_wait_gt_15min,0.0,0.5357,0.0
+Nanhu_Technology Park,high_demand_summer_weekday,mean_wait_min,0.0,19.569,0.0
+Nanhu_Technology Park,high_demand_summer_weekday,p_wait_gt_15min,0.0,0.5254,0.0
+Xiuzhou_Government Agency,rainy_day,mean_wait_min,0.0,20.16,0.0
+Xiuzhou_Government Agency,rainy_day,p_wait_gt_15min,0.0,0.6346,0.0
+Xiuzhou_Government Agency,weekend,mean_wait_min,0.0,15.877,0.0
+Xiuzhou_Government Agency,weekend,p_wait_gt_15min,0.0,0.5254,0.0
+Xiuzhou_Government Agency,low_demand_winter_weekday,mean_wait_min,0.0,18.41,0.0
+Xiuzhou_Government Agency,low_demand_winter_weekday,p_wait_gt_15min,0.0,0.6,0.0
+Xiuzhou_Government Agency,high_demand_summer_weekday,mean_wait_min,0.0,26.952,0.0
+Xiuzhou_Government Agency,high_demand_summer_weekday,p_wait_gt_15min,0.0,0.6515,0.0
+Xiuzhou_Government Agency,holiday,mean_wait_min,0.0,23.778,0.0
+Xiuzhou_Government Agency,holiday,p_wait_gt_15min,0.0,0.6338,0.0
+Tongxiang_Bus Station,rainy_day,mean_wait_min,0.0,13.059,0.0
+Tongxiang_Bus Station,rainy_day,p_wait_gt_15min,0.0,0.3636,0.0
+Tongxiang_Bus Station,weekend,mean_wait_min,0.0,18.414,0.0
+Tongxiang_Bus Station,weekend,p_wait_gt_15min,0.0,0.5156,0.0
+Tongxiang_Bus Station,low_demand_winter_weekday,mean_wait_min,0.0,31.145,0.0
+Tongxiang_Bus Station,low_demand_winter_weekday,p_wait_gt_15min,0.0,0.6111,0.0
+Tongxiang_Bus Station,high_demand_summer_weekday,mean_wait_min,0.0,22.206,0.0
+Tongxiang_Bus Station,high_demand_summer_weekday,p_wait_gt_15min,0.0,0.5932,0.0
+Tongxiang_Bus Station,holiday,mean_wait_min,0.0,21.182,0.0
+Tongxiang_Bus Station,holiday,p_wait_gt_15min,0.0,0.596,0.0

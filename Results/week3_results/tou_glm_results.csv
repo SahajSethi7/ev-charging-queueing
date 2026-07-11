@@ -1,0 +1,14 @@
+station,lr_statistic,lr_p_value,price_coef,price_se,price_significant_5pct,collinear_flag,model1_aic,model2_aic,aic_improvement,model1_deviance,model2_deviance,note
+Nanhu_Financial Industrial Park,,,,,,True,,,,,,Not identifiable: price is deterministic within hour; exogenous within-hour price variation required
+Nanhu_Technology Park,,,,,,True,,,,,,Not identifiable: price is deterministic within hour; exogenous within-hour price variation required
+Nanhu_Tourist Attraction,,,,,,True,,,,,,Not identifiable: price is deterministic within hour; exogenous within-hour price variation required
+Tongxiang_Bus Station,,,,,,True,,,,,,Not identifiable: price is deterministic within hour; exogenous within-hour price variation required
+Tongxiang_Industrial Park,,,,,,True,,,,,,Not identifiable: price is deterministic within hour; exogenous within-hour price variation required
+Tongxiang_Park A,,,,,,True,,,,,,Not identifiable: price is deterministic within hour; exogenous within-hour price variation required
+Tongxiang_Park B,,,,,,True,,,,,,Not identifiable: price is deterministic within hour; exogenous within-hour price variation required
+Tongxiang_Shopping Mall,,,,,,True,,,,,,Not identifiable: price is deterministic within hour; exogenous within-hour price variation required
+Xiuzhou_Expressway Service District A,,,,,,True,,,,,,Not identifiable: price is deterministic within hour; exogenous within-hour price variation required
+Xiuzhou_Expressway Service District B,,,,,,True,,,,,,Not identifiable: price is deterministic within hour; exogenous within-hour price variation required
+Xiuzhou_Expressway Service District C,,,,,,True,,,,,,Not identifiable: price is deterministic within hour; exogenous within-hour price variation required
+Xiuzhou_Government Agency,,,,,,True,,,,,,Not identifiable: price is deterministic within hour; exogenous within-hour price variation required
+Xiuzhou_Wholesale Market,,,,,,True,,,,,,Not identifiable: price is deterministic within hour; exogenous within-hour price variation required

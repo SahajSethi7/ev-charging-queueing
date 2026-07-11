@@ -1,0 +1,34 @@
+{
+  "week": 3,
+  "component": "Arrival Process Characterization",
+  "bootstrap_iters": 300,
+  "n_stations": 13,
+  "n_sessions_total": 441077,
+  "files_produced": [
+    "poisson_gof_tests.csv",
+    "conditional_dispersion.csv",
+    "nhpp_rate_functions.csv",
+    "nhpp_rate_functions_quarterly.csv",
+    "tou_glm_results.csv"
+  ],
+  "figures_produced": [
+    "fig1_gof_summary.png",
+    "fig2_conditional_dispersion.png",
+    "fig3_nhpp_rates_part1.png",
+    "fig3_nhpp_rates_part10.png",
+    "fig3_nhpp_rates_part11.png",
+    "fig3_nhpp_rates_part12.png",
+    "fig3_nhpp_rates_part13.png",
+    "fig3_nhpp_rates_part14.png",
+    "fig3_nhpp_rates_part2.png",
+    "fig3_nhpp_rates_part3.png",
+    "fig3_nhpp_rates_part4.png",
+    "fig3_nhpp_rates_part5.png",
+    "fig3_nhpp_rates_part6.png",
+    "fig3_nhpp_rates_part7.png",
+    "fig3_nhpp_rates_part8.png",
+    "fig3_nhpp_rates_part9.png",
+    "fig5_iat_distributions.png",
+    "fig6_quarterly_nhpp.png"
+  ]
+}

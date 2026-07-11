@@ -1,0 +1,93 @@
+:root {
+  font-family: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #334155;
+  background: #f8fafc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f8fafc;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.simulator {
+  width: min(1080px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 28px 0 48px;
+}
+
+.simulator h1,
+.simulator h2 {
+  color: #0f172a;
+}
+
+.simulator header p {
+  color: #64748b;
+}
+
+.controls,
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.controls label {
+  color: #475569;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.controls select {
+  width: 100%;
+  margin-top: 5px;
+  padding: 9px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  background: white;
+}
+
+.metric-grid article,
+.chart-card,
+.sim-message {
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 9px;
+  background: white;
+}
+
+.metric-grid span {
+  display: block;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.metric-grid strong {
+  display: block;
+  margin-top: 5px;
+  color: #0f172a;
+  font-size: 21px;
+}
+
+.chart-card {
+  margin-top: 18px;
+}
+
+.chart-card h2 {
+  margin: 0 0 12px;
+  font-size: 16px;
+}

@@ -1,0 +1,5 @@
+station,metric,target_p_wait_15,s_star_point,s_star_conservative,comparison_status,note
+Xiuzhou_Expressway Service District A,full_day_nhpp_sim_p_wait_gt_15min,0.05,4,4,simulation_only_same_metric,Analytical P(W>0) is a peak-hour reference and is not subtracted from simulated full-day P(W>15).
+Nanhu_Technology Park,full_day_nhpp_sim_p_wait_gt_15min,0.05,6,6,simulation_only_same_metric,Analytical P(W>0) is a peak-hour reference and is not subtracted from simulated full-day P(W>15).
+Xiuzhou_Government Agency,full_day_nhpp_sim_p_wait_gt_15min,0.05,8,8,simulation_only_same_metric,Analytical P(W>0) is a peak-hour reference and is not subtracted from simulated full-day P(W>15).
+Tongxiang_Bus Station,full_day_nhpp_sim_p_wait_gt_15min,0.05,10,10,simulation_only_same_metric,Analytical P(W>0) is a peak-hour reference and is not subtracted from simulated full-day P(W>15).

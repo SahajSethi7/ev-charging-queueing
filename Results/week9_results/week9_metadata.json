@@ -1,0 +1,92 @@
+{
+  "week": 9,
+  "simulation_days": 30,
+  "warmup_days": 7,
+  "components": [
+    "9A: Sim engine validation (activation + realized capacity)",
+    "9B: Heuristic activation schedule computation",
+    "9C: Greedy historical replay + 3-way comparison",
+    "9D: Activation frontier sweeps",
+    "9D+: Simulation-tuned activation schedules",
+    "9E: Frontier figures",
+    "9F: Sensitivity analysis"
+  ],
+  "design_decisions": {
+    "activation_heuristic": "Hourly Erlang-C / Allen-Cunneen computation is an analytically-motivated initializer, not a derived optimum. Hour-isolation assumption makes it systematically optimistic. The simulator is the binding evaluation.",
+    "utilization_denominator": "Realized active-server-minutes (event-driven integral): max(scheduled_capacity, n_users) at each state-change event. Both realized and static denominators are reported.",
+    "greedy_replay": "Historical replay on Week 8 station-days only. Same sessions, same observed durations, same fleet sizes. No fault buffer, no ML anticipation, no stochastic tier assignment.",
+    "greedy_tiebreak": "1. Inflexible first. 2. Earliest deadline among flexible. 3. Earlier arrival (FCFS). 4. Lower session_id.",
+    "recent_quarter": "Most recent non-degenerate quarter per station. Tech Park: 2021Q3 (2021Q4 has zero arrivals). Others: 2021Q4. NOT synchronized calendar quarters.",
+    "primary_figure_axis": "Active charger-hours per day (realized) vs P(Wq > 15 min). Utilization-vs-wait is secondary and labeled as using time-varying realized active capacity denominator.",
+    "activation_cap": "s_heuristic is NOT capped at historical s*. Capped at n_chargers (installed fleet size for that sweep point).",
+    "fault_interaction": "Targeted faults-OFF comparison run for Heuristic-Historical activation mode (not just Full activation). This gives a direct handle on whether activation changes the fault tax."
+  },
+  "validation": {
+    "test_A": {
+      "util_none": 0.4257470532285207,
+      "util_full": 0.42574705322852086,
+      "pw15_none": 0.02366997411621229,
+      "pw15_full": 0.02366997411621229,
+      "realized_static_ratio": 0.9999999999999996,
+      "pass_util": true,
+      "pass_pw15": true,
+      "n_reps_clean_none": 20,
+      "n_reps_drain_hit_none": 0,
+      "n_reps_clean_full": 20,
+      "n_reps_drain_hit_full": 0
+    },
+    "test_B": {
+      "util_full": 0.42574705322852086,
+      "util_reduced": 0.4408326412047714,
+      "pw15_full": 0.02366997411621229,
+      "pw15_reduced": 0.03288120806913574,
+      "ach_full": 7199.999999999995,
+      "ach_reduced": 6953.433081706475,
+      "pass_direction": true,
+      "n_reps_clean": 20,
+      "n_reps_drain_hit": 0
+    },
+    "test_C": {
+      "ratio": 0.9999999999999996,
+      "pass": true
+    },
+    "overall": "PASS"
+  },
+  "representative_stations": [
+    "Xiuzhou_Expressway Service District A",
+    "Nanhu_Technology Park",
+    "Xiuzhou_Government Agency",
+    "Tongxiang_Bus Station"
+  ],
+  "s_star_faults_on": {
+    "Xiuzhou_Expressway Service District A": 4,
+    "Nanhu_Technology Park": 6,
+    "Xiuzhou_Government Agency": 8,
+    "Tongxiang_Bus Station": 10
+  },
+  "recent_quarters": {
+    "Xiuzhou_Expressway Service District A": "2021Q4",
+    "Nanhu_Technology Park": "2021Q3",
+    "Xiuzhou_Government Agency": "2021Q4",
+    "Tongxiang_Bus Station": "2021Q4"
+  },
+  "n_activation_schedule_rows": 192,
+  "n_greedy_station_days": 19,
+  "n_frontier_sweep_rows": 229,
+  "n_sensitivity_rows": 35,
+  "n_sim_tuned_rows": 4,
+  "files_produced": [
+    "activation_schedules.csv",
+    "greedy_results.csv",
+    "three_way_comparison.csv",
+    "pareto_activation_results.csv",
+    "pareto_activation_replications.csv",
+    "sensitivity_results.csv",
+    "sim_tuned_schedules.csv",
+    "week9_metadata.json",
+    "figures/activation_bars_*.png",
+    "figures/capstone_frontier_*.png",
+    "figures/secondary_frontier_*.png",
+    "figures/master_overlay_*.png"
+  ]
+}

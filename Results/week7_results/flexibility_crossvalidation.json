@@ -1,0 +1,32 @@
+{
+  "decision": "heuristic_screen_with_sensitivity_only",
+  "sensitivity_fractions": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "acn_n_valid": 10162,
+  "acn_median_explicit_slack_min": 111.5,
+  "acn_mean_explicit_slack_min": 158.8,
+  "acn_fraction_slack_gt_30min": 0.6782,
+  "acn_fraction_slack_gt_60min": 0.5977,
+  "acn_fraction_slack_gt_120min": 0.4838,
+  "acn_benchmark_power_kw": 6.6,
+  "acn_median_implied_slack_min": 231.8,
+  "same_session_validation": {
+    "spearman_rho": 0.8039,
+    "spearman_pvalue": 0.0,
+    "mae_slack_min": 103.31,
+    "threshold_min": 30,
+    "precision": 0.7428,
+    "recall": 0.9993,
+    "scope": "Validates implied versus explicit slack on the same ACN sessions; transfer to Jiaxing remains unvalidated."
+  },
+  "jiaxing_n_proxy": 50419,
+  "jiaxing_median_implied_slack_min": 9.4,
+  "jiaxing_mean_implied_slack_min": 15.1,
+  "jiaxing_fraction_implied_slack_gt_30min": 0.1495,
+  "jiaxing_fraction_implied_slack_gt_60min": 0.0193,
+  "distribution_comparison_note": "ACN-Data JPL is workplace charging (users park all day, unplug at departure). Jiaxing is mixed-use (expressway, urban, institutional). ACN slack reflects parking behavior, not charging flexibility. The distributions are expected to differ structurally. Same-session ACN implied-versus-explicit slack statistics validate only the proxy construction on ACN, not its transfer to Jiaxing. Retained decision: use the Jiaxing proxy as a heuristic screen with sensitivity analysis at 25/50/75/100% of the proxy-flexible fraction."
+}

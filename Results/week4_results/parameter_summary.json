@@ -1,0 +1,278 @@
+{
+  "phase": "Phase 1b + Phase 2a",
+  "dataset": "Jiaxing (primary)",
+  "n_sessions": 441077,
+  "n_stations": 13,
+  "service_time": {
+    "DC_Fast": {
+      "n": 135359,
+      "mean_min": 34.91602602462095,
+      "cv": 0.562681794653947,
+      "best_distribution": "gamma",
+      "best_aic": 1166596.514250015,
+      "fit_params": {
+        "a": 2.9407596133661595,
+        "loc": 0.0,
+        "scale": 11.873131644600523
+      },
+      "simulation_sampler": {
+        "clamp_min": 0.5,
+        "clamp_max": 720.0,
+        "estimated_mean_min": 34.87413675823168,
+        "estimated_std_min": 20.329428019534078,
+        "estimated_cv": 0.5829370963493606,
+        "estimation_draws": 200000,
+        "estimation_seed": 4101
+      }
+    },
+    "Level_2": {
+      "n": 131330,
+      "mean_min": 96.4805670194675,
+      "cv": 1.328092373570955,
+      "best_distribution": "mixture_2lognorm",
+      "best_aic": 424901.3160299567,
+      "fit_params": {
+        "pi1": 0.5993372148819492,
+        "mu1": 3.667701306394912,
+        "sigma1": 1.6210574320263926,
+        "mu2": 4.18060873234811,
+        "sigma2": 0.4645588549174117
+      },
+      "simulation_sampler": {
+        "clamp_min": 0.5,
+        "clamp_max": 720.0,
+        "estimated_mean_min": 94.71517986106072,
+        "estimated_std_min": 134.89431496728392,
+        "estimated_cv": 1.4242100914041724,
+        "estimation_draws": 200000,
+        "estimation_seed": 4102
+      }
+    },
+    "Mixed": {
+      "n": 82220,
+      "mean_min": 44.09613334144166,
+      "cv": 0.5808727470391547,
+      "best_distribution": "weibull",
+      "best_aic": 754297.0249254158,
+      "fit_params": {
+        "c": 1.7680263965661112,
+        "loc": 0.0,
+        "scale": 49.50614205458412
+      },
+      "simulation_sampler": {
+        "clamp_min": 0.5,
+        "clamp_max": 720.0,
+        "estimated_mean_min": 44.04691765591219,
+        "estimated_std_min": 25.80689488810314,
+        "estimated_cv": 0.5858955918255773,
+        "estimation_draws": 200000,
+        "estimation_seed": 4103
+      }
+    },
+    "merge_decision": {
+      "dc_cv": 0.562681794653947,
+      "mixed_cv": 0.5808727470391547,
+      "cv_difference": 0.018190952385207737,
+      "same_best_dist": false,
+      "ks_2sample_stat": 0.16738624032110483,
+      "ks_2sample_p": 0.0,
+      "recommendation": "keep_separate"
+    }
+  },
+  "arrival_process": {
+    "poisson_rejected": true,
+    "model": "NHPP_piecewise_constant",
+    "note": "Poisson rejected at all 13 stations. NHPP with hourly rates is the arrival model for simulation.",
+    "nhpp_rates_file": "nhpp_rate_functions.csv",
+    "n_rate_entries": 312
+  },
+  "fleet_sizing": {
+    "Nanhu_Technology Park__historical_avg": {
+      "s_star_mms": 6,
+      "s_star_mgs": 6,
+      "sizing_scenario": "historical_avg",
+      "dominant_type": "DC_Fast",
+      "peak_lambda": 2.7773224043715845,
+      "cv": 1.411135380221413,
+      "cv_source": "station_type_mixture",
+      "mgs_correction_factor": 1.4956515306563158,
+      "service_param_scope": "station_mixture_from_global_type_fits"
+    },
+    "Nanhu_Technology Park__recent_quarter": {
+      "s_star_mms": 6,
+      "s_star_mgs": 6,
+      "sizing_scenario": "recent_quarter",
+      "dominant_type": "DC_Fast",
+      "peak_lambda": 2.7773224043715845,
+      "cv": 1.411135380221413,
+      "cv_source": "station_type_mixture",
+      "mgs_correction_factor": 1.4956515306563158,
+      "service_param_scope": "station_mixture_from_global_type_fits"
+    },
+    "Nanhu_Technology Park__stress_case": {
+      "s_star_mms": 7,
+      "s_star_mgs": 7,
+      "sizing_scenario": "stress_case",
+      "dominant_type": "DC_Fast",
+      "peak_lambda": 3.3327868852459015,
+      "cv": 1.411135380221413,
+      "cv_source": "station_type_mixture",
+      "mgs_correction_factor": 1.4956515306563158,
+      "service_param_scope": "station_mixture_from_global_type_fits"
+    },
+    "Tongxiang_Bus Station__historical_avg": {
+      "s_star_mms": 10,
+      "s_star_mgs": 11,
+      "sizing_scenario": "historical_avg",
+      "dominant_type": "Level_2",
+      "peak_lambda": 5.577868852459017,
+      "cv": 1.4249618284694399,
+      "cv_source": "station_type_mixture",
+      "mgs_correction_factor": 1.5152581062974846,
+      "service_param_scope": "station_mixture_from_global_type_fits"
+    },
+    "Tongxiang_Bus Station__recent_quarter": {
+      "s_star_mms": 13,
+      "s_star_mgs": 14,
+      "sizing_scenario": "recent_quarter",
+      "dominant_type": "Level_2",
+      "peak_lambda": 7.9010989010989015,
+      "cv": 1.4249618284694399,
+      "cv_source": "station_type_mixture",
+      "mgs_correction_factor": 1.5152581062974846,
+      "service_param_scope": "station_mixture_from_global_type_fits"
+    },
+    "Tongxiang_Bus Station__stress_case": {
+      "s_star_mms": 15,
+      "s_star_mgs": 16,
+      "sizing_scenario": "stress_case",
+      "dominant_type": "Level_2",
+      "peak_lambda": 9.481318681318681,
+      "cv": 1.4249618284694399,
+      "cv_source": "station_type_mixture",
+      "mgs_correction_factor": 1.5152581062974846,
+      "service_param_scope": "station_mixture_from_global_type_fits"
+    },
+    "Xiuzhou_Expressway Service District A__historical_avg": {
+      "s_star_mms": 5,
+      "s_star_mgs": 5,
+      "sizing_scenario": "historical_avg",
+      "dominant_type": "DC_Fast",
+      "peak_lambda": 1.7185792349726776,
+      "cv": 1.4398548220048186,
+      "cv_source": "station_type_mixture",
+      "mgs_correction_factor": 1.536590954225264,
+      "service_param_scope": "station_mixture_from_global_type_fits"
+    },
+    "Xiuzhou_Expressway Service District A__recent_quarter": {
+      "s_star_mms": 7,
+      "s_star_mgs": 8,
+      "sizing_scenario": "recent_quarter",
+      "dominant_type": "DC_Fast",
+      "peak_lambda": 3.5164835164835164,
+      "cv": 1.4398548220048186,
+      "cv_source": "station_type_mixture",
+      "mgs_correction_factor": 1.536590954225264,
+      "service_param_scope": "station_mixture_from_global_type_fits"
+    },
+    "Xiuzhou_Expressway Service District A__stress_case": {
+      "s_star_mms": 8,
+      "s_star_mgs": 8,
+      "sizing_scenario": "stress_case",
+      "dominant_type": "DC_Fast",
+      "peak_lambda": 4.21978021978022,
+      "cv": 1.4398548220048186,
+      "cv_source": "station_type_mixture",
+      "mgs_correction_factor": 1.536590954225264,
+      "service_param_scope": "station_mixture_from_global_type_fits"
+    },
+    "Xiuzhou_Government Agency__historical_avg": {
+      "s_star_mms": 8,
+      "s_star_mgs": 8,
+      "sizing_scenario": "historical_avg",
+      "dominant_type": "Level_2",
+      "peak_lambda": 3.702185792349727,
+      "cv": 1.4263301200492933,
+      "cv_source": "station_type_mixture",
+      "mgs_correction_factor": 1.5172088056799158,
+      "service_param_scope": "station_mixture_from_global_type_fits"
+    },
+    "Xiuzhou_Government Agency__recent_quarter": {
+      "s_star_mms": 10,
+      "s_star_mgs": 10,
+      "sizing_scenario": "recent_quarter",
+      "dominant_type": "Level_2",
+      "peak_lambda": 5.428571428571429,
+      "cv": 1.4263301200492933,
+      "cv_source": "station_type_mixture",
+      "mgs_correction_factor": 1.5172088056799158,
+      "service_param_scope": "station_mixture_from_global_type_fits"
+    },
+    "Xiuzhou_Government Agency__stress_case": {
+      "s_star_mms": 11,
+      "s_star_mgs": 11,
+      "sizing_scenario": "stress_case",
+      "dominant_type": "Level_2",
+      "peak_lambda": 6.514285714285714,
+      "cv": 1.4263301200492933,
+      "cv_source": "station_type_mixture",
+      "mgs_correction_factor": 1.5172088056799158,
+      "service_param_scope": "station_mixture_from_global_type_fits"
+    }
+  },
+  "forecasting": {
+    "model": "XGBoost",
+    "test_mae": 1.517969053091367,
+    "test_rmse": 2.2558799916223307,
+    "test_r2": 0.5079927550808129,
+    "improvement_over_baseline": 21.188348696197462,
+    "fleet_sizing_impact": "not_evaluated",
+    "split": {
+      "train_end_exclusive": "2021-09-01",
+      "test_start_inclusive": "2021-09-01",
+      "test_period": "Sep-Dec 2021"
+    },
+    "demand_shift": {
+      "train_mean_arrivals": 1.7654941106433644,
+      "test_mean_arrivals": 2.823008617065994,
+      "growth_ratio_test_over_train": 1.5989906735159034,
+      "note": "Fixed late-period holdout may inflate absolute errors under trend; relative model comparisons remain informative."
+    },
+    "holdout_bias_diagnostics": {
+      "mean_error_pred_minus_actual": -0.1094435180456656,
+      "mean_pct_error": 14.410215699589513,
+      "underprediction_rate": 0.3896069777217318
+    }
+  },
+  "acn_validation": {
+    "status": "completed",
+    "n_rows": 8,
+    "n_tests": 8,
+    "key_stats": {
+      "unconditional_DI": 3.9411126514127286,
+      "conditional_DI_mean": 1.1545935518325847,
+      "KS_exponential_IAT": 0.42569540146882695,
+      "service_time_CV": 0.49149448300976545
+    }
+  },
+  "fleet_sizing_scope": {
+    "type": "representative_subset",
+    "n_stations_sized": 4,
+    "n_stations_total": 13,
+    "representative_stations": [
+      "Nanhu_Technology Park",
+      "Tongxiang_Bus Station",
+      "Xiuzhou_Expressway Service District A",
+      "Xiuzhou_Government Agency"
+    ],
+    "note": "Fleet sizing covers 4 representative stations selected to span the archetype space (expressway, high-volume, institutional, mixed). Do NOT extrapolate to all 13 stations without running sizing for each individually."
+  },
+  "fleet_sizing_assumptions": {
+    "scenarios": {
+      "historical_avg": "Mean hourly rate across all dates (Jan 2020 \u2013 Dec 2021). Descriptive only.",
+      "recent_quarter": "Mean hourly rate over last 90 days before global study end. Operational sizing.",
+      "stress_case": "recent_quarter \u00d7 1.2. Planning margin."
+    },
+    "service_param_scope": "station-level charger-type mix with type-level fitted moments"
+  }
+}

@@ -1,0 +1,5 @@
+station,label,target_p_wait_15,s_star_on_point,s_star_on_conservative,s_star_off_point,s_star_off_conservative,s_star_faults_on,s_star_faults_off,fault_tax,fault_tax_point,on_point_vs_conservative_disagree,off_point_vs_conservative_disagree,empirical_fault_fraction
+Xiuzhou_Expressway Service District A,Expressway A (DC Fast),0.05,4,4,4,4,4,4,0,0,False,False,0.16909287558380223
+Nanhu_Technology Park,Technology Park (Mixed),0.05,6,6,6,6,6,6,0,0,False,False,0.15583031032683
+Xiuzhou_Government Agency,Gov Agency (L2),0.05,8,8,6,6,8,6,2,2,False,False,0.1663536136820272
+Tongxiang_Bus Station,"Bus Station (L2, High-Vol)",0.05,10,10,10,10,10,10,0,0,False,False,0.17204829494314428

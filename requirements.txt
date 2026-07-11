@@ -1,0 +1,18 @@
+# Supported Python: 3.11-3.12
+# Install: python -m pip install -r requirements.txt
+
+numpy>=1.26,<3.0
+pandas>=2.1,<3.0
+pyarrow>=14,<22
+scipy>=1.11,<2.0
+statsmodels>=0.14,<0.15
+scikit-learn>=1.3,<2.0
+xgboost>=2.0,<4.0
+torch>=2.1,<3.0
+PuLP>=2.7,<4.0
+simpy>=4.0,<5.0
+matplotlib>=3.8,<4.0
+pytest>=8.0,<9.0
+
+# Frontend dependencies are locked by my-appcd/package-lock.json.
+# Vite requires Node.js >=20.19 or >=22.12.

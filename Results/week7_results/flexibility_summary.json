@@ -1,0 +1,88 @@
+{
+  "benchmark_power_source": {
+    "Nanhu_Financial Industrial Park": "station_P90 (n=15,163)",
+    "Nanhu_Technology Park": "station_P90 (n=25,687)",
+    "Nanhu_Tourist Attraction": "station_P90 (n=17,227)",
+    "Tongxiang_Bus Station": "station_P90 (n=53,602)",
+    "Tongxiang_Industrial Park\t": "station_P90 (n=16,587)",
+    "Tongxiang_Park A": "station_P90 (n=22,111)",
+    "Tongxiang_Park B": "station_P90 (n=51,720)",
+    "Tongxiang_Shopping Mall": "station_P90 (n=41,961)",
+    "Xiuzhou_Expressway Service District A": "station_P90 (n=9,779)",
+    "Xiuzhou_Expressway Service District B": "station_P90 (n=9,183)",
+    "Xiuzhou_Expressway Service District C": "station_P90 (n=34,255)",
+    "Xiuzhou_Government Agency": "station_P90 (n=31,630)",
+    "Xiuzhou_Wholesale Market": "station_P90 (n=21,180)"
+  },
+  "benchmark_power_kw": {
+    "Nanhu_Financial Industrial Park": 41.68,
+    "Nanhu_Technology Park": 46.17,
+    "Nanhu_Tourist Attraction": 45.33,
+    "Tongxiang_Bus Station": 43.53,
+    "Tongxiang_Industrial Park\t": 43.97,
+    "Tongxiang_Park A": 39.24,
+    "Tongxiang_Park B": 44.26,
+    "Tongxiang_Shopping Mall": 36.24,
+    "Xiuzhou_Expressway Service District A": 42.82,
+    "Xiuzhou_Expressway Service District B": 42.11,
+    "Xiuzhou_Expressway Service District C": 42.42,
+    "Xiuzhou_Government Agency": 47.01,
+    "Xiuzhou_Wholesale Market": 37.89
+  },
+  "benchmark_sample_sizes": {
+    "Nanhu_Financial Industrial Park": 15163,
+    "Nanhu_Technology Park": 25687,
+    "Nanhu_Tourist Attraction": 17227,
+    "Tongxiang_Bus Station": 53602,
+    "Tongxiang_Industrial Park\t": 16587,
+    "Tongxiang_Park A": 22111,
+    "Tongxiang_Park B": 51720,
+    "Tongxiang_Shopping Mall": 41961,
+    "Xiuzhou_Expressway Service District A": 9779,
+    "Xiuzhou_Expressway Service District B": 9183,
+    "Xiuzhou_Expressway Service District C": 34255,
+    "Xiuzhou_Government Agency": 31630,
+    "Xiuzhou_Wholesale Market": 21180
+  },
+  "thresholds": {
+    "likely_flexible": 0.5,
+    "possibly_flexible": 0.8
+  },
+  "tier_counts": {
+    "inflexible": 72600,
+    "possibly_flexible": 19692,
+    "fault": 18283,
+    "likely_flexible": 16279,
+    "unlikely_flexible": 14448
+  },
+  "tier_fractions": {
+    "inflexible": 0.5138,
+    "possibly_flexible": 0.1394,
+    "fault": 0.1294,
+    "likely_flexible": 0.1152,
+    "unlikely_flexible": 0.1022
+  },
+  "shift_slots": {
+    "likely_flexible": 4,
+    "possibly_flexible": 2,
+    "unlikely_flexible": 0,
+    "inflexible": 0,
+    "fault": -1
+  },
+  "stations_analyzed": [
+    "Nanhu_Technology Park",
+    "Tongxiang_Bus Station",
+    "Xiuzhou_Expressway Service District A",
+    "Xiuzhou_Government Agency"
+  ],
+  "utilization_ratio_stats": {
+    "n": 50419,
+    "mean": 0.6316,
+    "median": 0.6159,
+    "p10": 0.2981,
+    "p25": 0.4505,
+    "p75": 0.8318,
+    "p90": 1.0039
+  },
+  "note": "utilization_ratio < 0.5 -> likely_flexible; 0.5-0.8 -> possibly_flexible; >= 0.8 -> unlikely_flexible (treated as inflexible for scheduling). Only sessions with flex_raw='user_stop_proxy' are sub-tiered; inflexible and fault sessions retain their original classification."
+}

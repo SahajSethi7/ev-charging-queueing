@@ -1,0 +1,27 @@
+{
+  "week": 4,
+  "components": [
+    "Service Time Distribution Fitting",
+    "ACN Cross-Validation",
+    "Erlang-C and M/G/s Fleet Sizing",
+    "XGBoost Demand Forecasting"
+  ],
+  "files_produced": [
+    "service_time_fits.csv",
+    "service_time_summary.json",
+    "acn_crossval.csv",
+    "erlang_c_results_4rep.csv",
+    "mgs_comparison_4rep.csv",
+    "xgboost_results.json",
+    "xgboost_feature_importance.csv",
+    "parameter_summary.json"
+  ],
+  "figures_produced": [
+    "erlang_c_comparison.png",
+    "qq_service_time_grid.png",
+    "service_time_fitted_pdf.png",
+    "xgboost_feature_importance.png",
+    "xgboost_model_comparison.png"
+  ],
+  "sanity_issues": []
+}

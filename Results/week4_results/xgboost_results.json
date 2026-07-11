@@ -1,0 +1,75 @@
+{
+  "models": {
+    "last_week_same_hour": {
+      "mae": 1.9260718789407314,
+      "rmse": 2.9947410820974185,
+      "r2": 0.13292218623064356
+    },
+    "historical_mean": {
+      "mae": 1.8300509568982377,
+      "rmse": 2.823835323468717,
+      "r2": 0.22906414171544165
+    },
+    "xgboost": {
+      "mae": 1.517969053091367,
+      "rmse": 2.2558799916223307,
+      "r2": 0.5079927550808129,
+      "cv_mae": 1.2806864722783136,
+      "cv_mae_std": 0.11922070555132219
+    }
+  },
+  "train_size": 188136,
+  "test_size": 38064,
+  "n_features": 16,
+  "test_period": "Sep-Dec 2021",
+  "split": {
+    "train_end_exclusive": "2021-09-01",
+    "test_start_inclusive": "2021-09-01",
+    "test_period": "Sep-Dec 2021"
+  },
+  "demand_shift": {
+    "train_mean_arrivals": 1.7654941106433644,
+    "test_mean_arrivals": 2.823008617065994,
+    "growth_ratio_test_over_train": 1.5989906735159034,
+    "note": "Fixed late-period holdout may inflate absolute errors under trend; relative model comparisons remain informative."
+  },
+  "holdout_bias_diagnostics": {
+    "mean_error_pred_minus_actual": -0.1094435180456656,
+    "mean_pct_error": 14.410215699589513,
+    "underprediction_rate": 0.3896069777217318
+  },
+  "monthly_holdout_metrics": [
+    {
+      "month": "2021-09",
+      "n": 9360,
+      "mae": 1.5788596278341074,
+      "rmse": 2.3426505417996792,
+      "mean_error": -0.07417124294671906
+    },
+    {
+      "month": "2021-10",
+      "n": 9672,
+      "mae": 1.5566657008625362,
+      "rmse": 2.314086720421121,
+      "mean_error": -0.05810342872997929
+    },
+    {
+      "month": "2021-11",
+      "n": 9360,
+      "mae": 1.4826073851988106,
+      "rmse": 2.178776393158555,
+      "mean_error": -0.14029047001749237
+    },
+    {
+      "month": "2021-12",
+      "n": 9672,
+      "mae": 1.4545670115942138,
+      "rmse": 2.183516486531119,
+      "mean_error": -0.16506617812953234
+    }
+  ],
+  "improvement_over_lwsh_mae": 21.188348696197462,
+  "improvement_over_hist_mae": 17.053181094794205,
+  "fleet_sizing_impact": "not_evaluated",
+  "fleet_sizing_impact_note": "Forecast error alone does not establish operational impact. A holdout forecast-to-sizing/activation experiment is required."
+}

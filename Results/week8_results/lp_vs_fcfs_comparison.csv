@@ -1,0 +1,77 @@
+station_name,day_label,metric,fcfs_value,lp_value,delta,pct_change
+Xiuzhou_Expressway Service District A,high_demand_summer_weekday,mean_wait_min,0.0,27.975,27.975,0.0
+Xiuzhou_Expressway Service District A,high_demand_summer_weekday,p_wait_gt_15min,0.0,0.7436,0.7436,0.0
+Xiuzhou_Expressway Service District A,high_demand_summer_weekday,mean_utilization,0.1649,0.1649,0.0,0.0
+Xiuzhou_Expressway Service District A,high_demand_summer_weekday,tou_cost_yuan,365.54,344.15,-21.39,-5.85
+Xiuzhou_Expressway Service District A,low_demand_winter_weekday,mean_wait_min,0.0,14.983,14.983,0.0
+Xiuzhou_Expressway Service District A,low_demand_winter_weekday,p_wait_gt_15min,0.0,0.5,0.5,0.0
+Xiuzhou_Expressway Service District A,low_demand_winter_weekday,mean_utilization,0.0166,0.0166,0.0,0.0
+Xiuzhou_Expressway Service District A,low_demand_winter_weekday,tou_cost_yuan,39.67,39.67,0.0,0.0
+Xiuzhou_Expressway Service District A,rainy_day,mean_wait_min,0.0,9.208,9.208,0.0
+Xiuzhou_Expressway Service District A,rainy_day,p_wait_gt_15min,0.0,0.1,0.1,0.0
+Xiuzhou_Expressway Service District A,rainy_day,mean_utilization,0.0364,0.0339,-0.0025,-6.87
+Xiuzhou_Expressway Service District A,rainy_day,tou_cost_yuan,91.2,91.2,0.0,0.0
+Xiuzhou_Expressway Service District A,holiday,mean_wait_min,0.0,18.362,18.362,0.0
+Xiuzhou_Expressway Service District A,holiday,p_wait_gt_15min,0.0,0.5714,0.5714,0.0
+Xiuzhou_Expressway Service District A,holiday,mean_utilization,0.1773,0.1658,-0.0115,-6.49
+Xiuzhou_Expressway Service District A,holiday,tou_cost_yuan,503.08,484.99,-18.09,-3.6
+Xiuzhou_Expressway Service District A,weekend,mean_wait_min,0.0,15.877,15.877,0.0
+Xiuzhou_Expressway Service District A,weekend,p_wait_gt_15min,0.0,0.4,0.4,0.0
+Xiuzhou_Expressway Service District A,weekend,mean_utilization,0.0282,0.0282,0.0,0.0
+Xiuzhou_Expressway Service District A,weekend,tou_cost_yuan,114.82,114.82,0.0,0.0
+Nanhu_Technology Park,high_demand_summer_weekday,mean_wait_min,0.0,19.569,19.569,0.0
+Nanhu_Technology Park,high_demand_summer_weekday,p_wait_gt_15min,0.0,0.5254,0.5254,0.0
+Nanhu_Technology Park,high_demand_summer_weekday,mean_utilization,0.3677,0.3635,-0.0042,-1.14
+Nanhu_Technology Park,high_demand_summer_weekday,tou_cost_yuan,887.46,881.43,-6.03,-0.68
+Nanhu_Technology Park,low_demand_winter_weekday,mean_wait_min,0.0,19.722,19.722,0.0
+Nanhu_Technology Park,low_demand_winter_weekday,p_wait_gt_15min,0.0,0.5357,0.5357,0.0
+Nanhu_Technology Park,low_demand_winter_weekday,mean_utilization,0.243,0.2393,-0.0037,-1.52
+Nanhu_Technology Park,low_demand_winter_weekday,tou_cost_yuan,458.79,413.57,-45.22,-9.86
+Nanhu_Technology Park,rainy_day,mean_wait_min,0.0,16.6,16.6,0.0
+Nanhu_Technology Park,rainy_day,p_wait_gt_15min,0.0,0.4528,0.4528,0.0
+Nanhu_Technology Park,rainy_day,mean_utilization,0.3884,0.3775,-0.0109,-2.81
+Nanhu_Technology Park,rainy_day,tou_cost_yuan,761.81,723.69,-38.12,-5.0
+Nanhu_Technology Park,weekend,mean_wait_min,0.0,16.538,16.538,0.0
+Nanhu_Technology Park,weekend,p_wait_gt_15min,0.0,0.4928,0.4928,0.0
+Nanhu_Technology Park,weekend,mean_utilization,0.3813,0.3742,-0.0071,-1.86
+Nanhu_Technology Park,weekend,tou_cost_yuan,886.29,875.35,-10.94,-1.23
+Xiuzhou_Government Agency,high_demand_summer_weekday,mean_wait_min,0.0,26.952,26.952,0.0
+Xiuzhou_Government Agency,high_demand_summer_weekday,p_wait_gt_15min,0.0,0.6515,0.6515,0.0
+Xiuzhou_Government Agency,high_demand_summer_weekday,mean_utilization,0.7164,0.705,-0.0114,-1.59
+Xiuzhou_Government Agency,high_demand_summer_weekday,tou_cost_yuan,1305.16,1288.56,-16.6,-1.27
+Xiuzhou_Government Agency,low_demand_winter_weekday,mean_wait_min,0.0,18.41,18.41,0.0
+Xiuzhou_Government Agency,low_demand_winter_weekday,p_wait_gt_15min,0.0,0.6,0.6,0.0
+Xiuzhou_Government Agency,low_demand_winter_weekday,mean_utilization,0.0493,0.0492,-0.0001,-0.2
+Xiuzhou_Government Agency,low_demand_winter_weekday,tou_cost_yuan,201.67,200.85,-0.82,-0.41
+Xiuzhou_Government Agency,rainy_day,mean_wait_min,0.0,20.16,20.16,0.0
+Xiuzhou_Government Agency,rainy_day,p_wait_gt_15min,0.0,0.6346,0.6346,0.0
+Xiuzhou_Government Agency,rainy_day,mean_utilization,0.2967,0.2893,-0.0074,-2.49
+Xiuzhou_Government Agency,rainy_day,tou_cost_yuan,704.29,641.8,-62.49,-8.87
+Xiuzhou_Government Agency,holiday,mean_wait_min,0.0,23.778,23.778,0.0
+Xiuzhou_Government Agency,holiday,p_wait_gt_15min,0.0,0.6338,0.6338,0.0
+Xiuzhou_Government Agency,holiday,mean_utilization,0.5984,0.5926,-0.0058,-0.97
+Xiuzhou_Government Agency,holiday,tou_cost_yuan,1458.82,1351.07,-107.75,-7.39
+Xiuzhou_Government Agency,weekend,mean_wait_min,0.0,15.877,15.877,0.0
+Xiuzhou_Government Agency,weekend,p_wait_gt_15min,0.0,0.5254,0.5254,0.0
+Xiuzhou_Government Agency,weekend,mean_utilization,0.4935,0.4823,-0.0112,-2.27
+Xiuzhou_Government Agency,weekend,tou_cost_yuan,861.56,782.49,-79.07,-9.18
+Tongxiang_Bus Station,high_demand_summer_weekday,mean_wait_min,0.0,22.206,22.206,0.0
+Tongxiang_Bus Station,high_demand_summer_weekday,p_wait_gt_15min,0.0,0.5932,0.5932,0.0
+Tongxiang_Bus Station,high_demand_summer_weekday,mean_utilization,0.5419,0.5348,-0.0071,-1.31
+Tongxiang_Bus Station,high_demand_summer_weekday,tou_cost_yuan,1751.4,1737.06,-14.34,-0.82
+Tongxiang_Bus Station,low_demand_winter_weekday,mean_wait_min,0.0,31.145,31.145,0.0
+Tongxiang_Bus Station,low_demand_winter_weekday,p_wait_gt_15min,0.0,0.6111,0.6111,0.0
+Tongxiang_Bus Station,low_demand_winter_weekday,mean_utilization,0.1426,0.1407,-0.0019,-1.33
+Tongxiang_Bus Station,low_demand_winter_weekday,tou_cost_yuan,296.75,238.44,-58.31,-19.65
+Tongxiang_Bus Station,rainy_day,mean_wait_min,0.0,13.059,13.059,0.0
+Tongxiang_Bus Station,rainy_day,p_wait_gt_15min,0.0,0.3636,0.3636,0.0
+Tongxiang_Bus Station,rainy_day,mean_utilization,0.3251,0.322,-0.0031,-0.95
+Tongxiang_Bus Station,rainy_day,tou_cost_yuan,647.42,603.57,-43.85,-6.77
+Tongxiang_Bus Station,holiday,mean_wait_min,0.0,21.182,21.182,0.0
+Tongxiang_Bus Station,holiday,p_wait_gt_15min,0.0,0.596,0.596,0.0
+Tongxiang_Bus Station,holiday,mean_utilization,0.4784,0.4736,-0.0048,-1.0
+Tongxiang_Bus Station,holiday,tou_cost_yuan,1439.42,1413.23,-26.19,-1.82
+Tongxiang_Bus Station,weekend,mean_wait_min,0.0,18.414,18.414,0.0
+Tongxiang_Bus Station,weekend,p_wait_gt_15min,0.0,0.5156,0.5156,0.0
+Tongxiang_Bus Station,weekend,mean_utilization,0.2912,0.2872,-0.004,-1.37
+Tongxiang_Bus Station,weekend,tou_cost_yuan,936.4,878.39,-58.01,-6.2

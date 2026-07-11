@@ -1,0 +1,17 @@
+feature,importance
+lag_24,0.27220157
+lag_1,0.19674456
+rolling_7d_mean,0.10508655
+tou_tier_num,0.088118486
+lag_168,0.086281806
+hour,0.08103324
+hour_sin,0.031080665
+hour_cos,0.02706885
+station_code,0.019090112
+dow_sin,0.016181836
+temperature,0.014890083
+month,0.014103918
+dow,0.012949044
+precipitation,0.012079472
+is_weekend,0.011595424
+dow_cos,0.01149441

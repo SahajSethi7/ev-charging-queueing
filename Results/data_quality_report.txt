@@ -1,0 +1,72 @@
+======================================================================
+DATA QUALITY REPORT — Jiaxing EV Charging Dataset
+======================================================================
+
+Dataset shape: (441077, 44)
+Time range: 2019-12-31 21:27:03 → 2021-12-31 23:52:14
+Stations (station_id): 92
+Districts: 3
+is_abnormal rate: 18.58%  (DIFFERS from sample ~31%)
+
+Schema warnings (1):
+  - Station count 92 ≠ expected 13
+
+Null counts (non-zero only):
+  effective_rate_kw                               5  (0.00%)
+  price_per_kwh                              54,621  (12.38%)
+  elec_price_per_kwh                         54,621  (12.38%)
+  service_price_per_kwh                      54,621  (12.38%)
+
+Anomaly flags:
+  flag_nonpositive_duration                       5  (0.00%)
+  flag_excessive_duration                         0  (0.00%)
+  flag_zero_energy                           54,621  (12.38%)
+  flag_rate_too_low                          54,735  (12.41%)
+  flag_rate_too_high                              0  (0.00%)
+  flag_any                                   54,740  (12.41%)
+
+Column listing (44):
+  user_id                                  int64
+  station_id                               int64
+  location_info                            object
+  district                                 object
+  order_created_time                       datetime64[ns]
+  energy_kwh                               float64
+  elec_fee                                 float64
+  service_fee                              float64
+  total_amount                             float64
+  actual_payment                           float64
+  start_time                               datetime64[ns]
+  end_time                                 datetime64[ns]
+  payment_time                             datetime64[ns]
+  end_cause                                object
+  is_full_charge                           int64
+  is_user_stop                             int64
+  is_nonsystem_fault                       int64
+  is_system_issue                          int64
+  is_ev_fault                              int64
+  is_other_fault                           int64
+  is_abnormal                              int64
+  date                                     object
+  humidity                                 int64
+  precipitation                            float64
+  temperature                              float64
+  hour_of_day                              int32
+  tou_electricity_price                    float64
+  charging_duration_min                    float64
+  effective_rate_kw                        float64
+  price_per_kwh                            float64
+  elec_price_per_kwh                       float64
+  service_price_per_kwh                    float64
+  fee_residual                             float64
+  day_of_week                              int32
+  month                                    int32
+  year                                     int32
+  is_weekend                               int64
+  flag_nonpositive_duration                bool
+  flag_excessive_duration                  bool
+  flag_zero_energy                         bool
+  is_null_session                          bool
+  flag_rate_too_low                        bool
+  flag_rate_too_high                       bool
+  flag_any                                 bool

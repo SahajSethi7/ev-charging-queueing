@@ -1,0 +1,144 @@
+{
+  "week": 7,
+  "components": [
+    "7A: Phase 2 Narrative Synthesis",
+    "7B: Jiaxing Flexibility Proxy",
+    "7C: ACN Cross-Validation"
+  ],
+  "phase2_claims": {
+    "claim1_mms_underestimation": [
+      {
+        "station": "Xiuzhou_Expressway Service District A",
+        "label": "Expressway A (DC Fast)",
+        "s_mms": 5,
+        "s_mgs": 5,
+        "s_gap": 0,
+        "direct_simulation_gap": "not_evaluated_metric_mismatch",
+        "week6_comparison_status": "simulation_only_same_metric"
+      },
+      {
+        "station": "Nanhu_Technology Park",
+        "label": "Technology Park (Mixed)",
+        "s_mms": 6,
+        "s_mgs": 6,
+        "s_gap": 0,
+        "direct_simulation_gap": "not_evaluated_metric_mismatch",
+        "week6_comparison_status": "simulation_only_same_metric"
+      },
+      {
+        "station": "Xiuzhou_Government Agency",
+        "label": "Gov Agency (L2)",
+        "s_mms": 8,
+        "s_mgs": 8,
+        "s_gap": 0,
+        "direct_simulation_gap": "not_evaluated_metric_mismatch",
+        "week6_comparison_status": "simulation_only_same_metric"
+      },
+      {
+        "station": "Tongxiang_Bus Station",
+        "label": "Bus Station (L2, High-Vol)",
+        "s_mms": 10,
+        "s_mgs": 11,
+        "s_gap": 1,
+        "direct_simulation_gap": "not_evaluated_metric_mismatch",
+        "week6_comparison_status": "simulation_only_same_metric"
+      }
+    ],
+    "claim2_fault_penalty": [
+      {
+        "station": "Xiuzhou_Expressway Service District A",
+        "label": "Expressway A (DC Fast)",
+        "fault_tax": 0,
+        "s_on": 4,
+        "s_off": 4,
+        "fault_fraction": 0.1690928755838022
+      },
+      {
+        "station": "Nanhu_Technology Park",
+        "label": "Technology Park (Mixed)",
+        "fault_tax": 0,
+        "s_on": 6,
+        "s_off": 6,
+        "fault_fraction": 0.15583031032683
+      },
+      {
+        "station": "Xiuzhou_Government Agency",
+        "label": "Gov Agency (L2)",
+        "fault_tax": 2,
+        "s_on": 8,
+        "s_off": 6,
+        "fault_fraction": 0.1663536136820272
+      },
+      {
+        "station": "Tongxiang_Bus Station",
+        "label": "Bus Station (L2, High-Vol)",
+        "fault_tax": 0,
+        "s_on": 10,
+        "s_off": 10,
+        "fault_fraction": 0.1720482949431442
+      }
+    ],
+    "claim3_demand_growth_impact": {
+      "lstm_negative_result": true,
+      "demand_growth_changes_fleet": true
+    }
+  },
+  "flexibility_summary": {
+    "benchmark_power_source": {
+      "Nanhu_Financial Industrial Park": "station_P90 (n=15,163)",
+      "Nanhu_Technology Park": "station_P90 (n=25,687)",
+      "Nanhu_Tourist Attraction": "station_P90 (n=17,227)",
+      "Tongxiang_Bus Station": "station_P90 (n=53,602)",
+      "Tongxiang_Industrial Park\t": "station_P90 (n=16,587)",
+      "Tongxiang_Park A": "station_P90 (n=22,111)",
+      "Tongxiang_Park B": "station_P90 (n=51,720)",
+      "Tongxiang_Shopping Mall": "station_P90 (n=41,961)",
+      "Xiuzhou_Expressway Service District A": "station_P90 (n=9,779)",
+      "Xiuzhou_Expressway Service District B": "station_P90 (n=9,183)",
+      "Xiuzhou_Expressway Service District C": "station_P90 (n=34,255)",
+      "Xiuzhou_Government Agency": "station_P90 (n=31,630)",
+      "Xiuzhou_Wholesale Market": "station_P90 (n=21,180)"
+    },
+    "benchmark_power_kw": {
+      "Nanhu_Financial Industrial Park": 41.68,
+      "Nanhu_Technology Park": 46.17,
+      "Nanhu_Tourist Attraction": 45.33,
+      "Tongxiang_Bus Station": 43.53,
+      "Tongxiang_Industrial Park\t": 43.97,
+      "Tongxiang_Park A": 39.24,
+      "Tongxiang_Park B": 44.26,
+      "Tongxiang_Shopping Mall": 36.24,
+      "Xiuzhou_Expressway Service District A": 42.82,
+      "Xiuzhou_Expressway Service District B": 42.11,
+      "Xiuzhou_Expressway Service District C": 42.42,
+      "Xiuzhou_Government Agency": 47.01,
+      "Xiuzhou_Wholesale Market": 37.89
+    },
+    "thresholds": {
+      "likely_flexible": 0.5,
+      "possibly_flexible": 0.8
+    },
+    "tier_fractions": {
+      "inflexible": 0.5138,
+      "possibly_flexible": 0.1394,
+      "fault": 0.1294,
+      "likely_flexible": 0.1152,
+      "unlikely_flexible": 0.1022
+    }
+  },
+  "crossvalidation_decision": "heuristic_screen_with_sensitivity_only",
+  "files_produced": [
+    "phase2_conclusions.md",
+    "flexibility_analysis.csv",
+    "flexibility_summary.json",
+    "acn_flexibility.csv",
+    "flexibility_crossvalidation.json",
+    "week7_metadata.json"
+  ],
+  "figures_produced": [
+    "flexibility_by_charger_type.png",
+    "flexibility_by_hour_station.png",
+    "flexibility_crossvalidation.png",
+    "flexibility_utilization_ratio.png"
+  ]
+}

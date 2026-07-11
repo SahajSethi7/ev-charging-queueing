@@ -1,0 +1,20 @@
+n_sessions_nonfault,mean_wait_min,median_wait_min,p_wait_gt_15min,mean_utilization,tou_cost_yuan,throughput,station_name,day_label,date_dt,n_chargers,n_sessions_total,n_fault_excluded
+39,0.0,0.0,0.0,0.1649,365.54,1.625,Xiuzhou_Expressway Service District A,high_demand_summer_weekday,2021-07-16,4,61,22
+4,0.0,0.0,0.0,0.0166,39.67,0.167,Xiuzhou_Expressway Service District A,low_demand_winter_weekday,2021-02-11,4,10,6
+10,0.0,0.0,0.0,0.0364,91.2,0.417,Xiuzhou_Expressway Service District A,rainy_day,2020-06-23,4,55,45
+35,0.0,0.0,0.0,0.1773,503.08,1.458,Xiuzhou_Expressway Service District A,holiday,2021-10-05,4,45,10
+5,0.0,0.0,0.0,0.0282,114.82,0.208,Xiuzhou_Expressway Service District A,weekend,2020-06-28,4,6,1
+59,0.0,0.0,0.0,0.3677,887.46,2.458,Nanhu_Technology Park,high_demand_summer_weekday,2021-07-16,6,62,0
+28,0.0,0.0,0.0,0.243,458.79,1.167,Nanhu_Technology Park,low_demand_winter_weekday,2021-02-11,6,31,1
+53,0.0,0.0,0.0,0.3884,761.81,2.208,Nanhu_Technology Park,rainy_day,2020-06-23,6,58,2
+69,0.0,0.0,0.0,0.3813,886.29,2.875,Nanhu_Technology Park,weekend,2020-06-28,6,72,0
+66,0.0,0.0,0.0,0.7164,1305.16,2.75,Xiuzhou_Government Agency,high_demand_summer_weekday,2021-07-16,8,79,5
+15,0.0,0.0,0.0,0.0493,201.67,0.625,Xiuzhou_Government Agency,low_demand_winter_weekday,2021-02-11,8,18,3
+52,0.0,0.0,0.0,0.2967,704.29,2.167,Xiuzhou_Government Agency,rainy_day,2020-06-23,8,60,2
+71,0.0,0.0,0.0,0.5984,1458.82,2.958,Xiuzhou_Government Agency,holiday,2021-10-05,8,87,8
+59,0.0,0.0,0.0,0.4935,861.56,2.458,Xiuzhou_Government Agency,weekend,2020-06-28,8,73,6
+118,0.0,0.0,0.0,0.5419,1751.4,4.917,Tongxiang_Bus Station,high_demand_summer_weekday,2021-07-16,10,142,17
+18,0.0,0.0,0.0,0.1426,296.75,0.75,Tongxiang_Bus Station,low_demand_winter_weekday,2021-02-11,10,23,3
+44,0.0,0.0,0.0,0.3251,647.42,1.833,Tongxiang_Bus Station,rainy_day,2020-06-23,10,53,3
+99,0.0,0.0,0.0,0.4784,1439.42,4.125,Tongxiang_Bus Station,holiday,2021-10-05,10,112,7
+64,0.0,0.0,0.0,0.2912,936.4,2.667,Tongxiang_Bus Station,weekend,2020-06-28,10,75,7

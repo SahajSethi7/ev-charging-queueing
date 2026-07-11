@@ -1,0 +1,20 @@
+mean_wait_min,median_wait_min,p95_wait_min,p_wait_gt_10min,p_wait_gt_15min,max_wait_min,n_deadline_promotions,n_sessions_with_wait,station_name,day_label,n_chargers,n_sessions,n_total_with_faults
+0.0,0.0,0.0,0.0,0.0,0.0,0,0,Xiuzhou_Expressway Service District A,rainy_day,4,10,55
+0.0,0.0,0.0,0.0,0.0,0.0,0,0,Xiuzhou_Expressway Service District A,weekend,4,5,6
+0.0,0.0,0.0,0.0,0.0,0.0,0,0,Xiuzhou_Expressway Service District A,low_demand_winter_weekday,4,4,10
+0.0,0.0,0.0,0.0,0.0,0.0,0,0,Xiuzhou_Expressway Service District A,high_demand_summer_weekday,4,39,61
+0.0,0.0,0.0,0.0,0.0,0.0,0,0,Xiuzhou_Expressway Service District A,holiday,4,35,45
+0.0,0.0,0.0,0.0,0.0,0.0,0,0,Nanhu_Technology Park,rainy_day,6,56,58
+0.0,0.0,0.0,0.0,0.0,0.0,0,0,Nanhu_Technology Park,weekend,6,72,72
+0.0,0.0,0.0,0.0,0.0,0.0,0,0,Nanhu_Technology Park,low_demand_winter_weekday,6,30,31
+0.0,0.0,0.0,0.0,0.0,0.0,0,0,Nanhu_Technology Park,high_demand_summer_weekday,6,62,62
+0.0,0.0,0.0,0.0,0.0,0.0,0,0,Xiuzhou_Government Agency,rainy_day,8,58,60
+0.0,0.0,0.0,0.0,0.0,0.0,0,0,Xiuzhou_Government Agency,weekend,8,67,73
+0.0,0.0,0.0,0.0,0.0,0.0,0,0,Xiuzhou_Government Agency,low_demand_winter_weekday,8,15,18
+0.0,0.0,0.0,0.0,0.0,0.0,0,0,Xiuzhou_Government Agency,high_demand_summer_weekday,8,74,79
+0.0,0.0,0.0,0.0,0.0,0.0,0,0,Xiuzhou_Government Agency,holiday,8,79,87
+0.0,0.0,0.0,0.0,0.0,0.0,0,0,Tongxiang_Bus Station,rainy_day,10,50,53
+0.0,0.0,0.0,0.0,0.0,0.0,0,0,Tongxiang_Bus Station,weekend,10,68,75
+0.0,0.0,0.0,0.0,0.0,0.0,0,0,Tongxiang_Bus Station,low_demand_winter_weekday,10,20,23
+0.0,0.0,0.0,0.0,0.0,0.0,0,0,Tongxiang_Bus Station,high_demand_summer_weekday,10,125,142
+0.0,0.0,0.0,0.0,0.0,0.0,0,0,Tongxiang_Bus Station,holiday,10,105,112

@@ -1,0 +1,56 @@
+station,n_chargers,metric_family,metric_name,rho_peak_hour,mms_p_wait_gt_0,mgs_p_wait_gt_0,note
+Xiuzhou_Expressway Service District A,2,analytical_peak_hour,p_wait_gt_0,0.8793611732754886,0.7758108801690288,0.7919450861082875,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Expressway Service District A,4,analytical_peak_hour,p_wait_gt_0,0.4396805866377443,0.0694678519584652,0.084105027438812,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Expressway Service District A,6,analytical_peak_hour,p_wait_gt_0,0.2931203910918295,0.0035516469088405,0.005099959818255,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Expressway Service District A,8,analytical_peak_hour,p_wait_gt_0,0.21984029331887214,0.0001091169321216,0.0001858352098312,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Expressway Service District A,10,analytical_peak_hour,p_wait_gt_0,0.17587223465509771,2.177960191125276e-06,4.39931112583502e-06,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Expressway Service District A,12,analytical_peak_hour,p_wait_gt_0,0.14656019554591476,3.023441376376849e-08,7.243278368972845e-08,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Expressway Service District A,14,analytical_peak_hour,p_wait_gt_0,0.12562302475364123,3.0768625116267844e-10,8.742599798103265e-10,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Expressway Service District A,16,analytical_peak_hour,p_wait_gt_0,0.10992014665943607,2.389848292976877e-12,8.053816407484049e-12,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Expressway Service District A,18,analytical_peak_hour,p_wait_gt_0,0.09770679703060985,1.4619547610467453e-14,5.843381088309032e-14,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Expressway Service District A,20,analytical_peak_hour,p_wait_gt_0,0.08793611732754886,7.222316348255981e-17,3.423778561753622e-16,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Expressway Service District A,22,analytical_peak_hour,p_wait_gt_0,0.07994192484322624,2.9406835409418903e-19,1.6533939192257542e-18,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Expressway Service District A,24,analytical_peak_hour,p_wait_gt_0,0.07328009777295738,1.0036440326068914e-21,6.6927813384164766e-21,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Expressway Service District A,26,analytical_peak_hour,p_wait_gt_0,0.06764316717503759,2.912302107623256e-24,2.303362215326589e-23,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Expressway Service District A,28,analytical_peak_hour,p_wait_gt_0,0.06281151237682062,7.272330105098125e-27,6.821788996996017e-26,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Expressway Service District A,30,analytical_peak_hour,p_wait_gt_0,0.058624078218365905,1.579144721812323e-29,1.756893821036341e-28,Reference only; not same metric as full-day P(W>15).
+Nanhu_Technology Park,4,analytical_peak_hour,p_wait_gt_0,0.6754033905710775,0.2802768787975361,0.3130497637448535,Reference only; not same metric as full-day P(W>15).
+Nanhu_Technology Park,6,analytical_peak_hour,p_wait_gt_0,0.45026892704738497,0.0279830172188511,0.0370594346011527,Reference only; not same metric as full-day P(W>15).
+Nanhu_Technology Park,8,analytical_peak_hour,p_wait_gt_0,0.3377016952855387,0.0018260744903731,0.002867483190373,Reference only; not same metric as full-day P(W>15).
+Nanhu_Technology Park,10,analytical_peak_hour,p_wait_gt_0,0.27016135622843096,8.041163853478493e-05,0.0001497198710776,Reference only; not same metric as full-day P(W>15).
+Nanhu_Technology Park,12,analytical_peak_hour,p_wait_gt_0,0.22513446352369249,2.5047726611461326e-06,5.529768990631866e-06,Reference only; not same metric as full-day P(W>15).
+Nanhu_Technology Park,14,analytical_peak_hour,p_wait_gt_0,0.19297239730602211,5.768317561373664e-08,1.509961859213315e-07,Reference only; not same metric as full-day P(W>15).
+Nanhu_Technology Park,16,analytical_peak_hour,p_wait_gt_0,0.16885084764276936,1.018735231276369e-09,3.161959357118097e-09,Reference only; not same metric as full-day P(W>15).
+Nanhu_Technology Park,18,analytical_peak_hour,p_wait_gt_0,0.1500896423491283,1.4212147915147555e-11,5.230374886725849e-11,Reference only; not same metric as full-day P(W>15).
+Nanhu_Technology Park,20,analytical_peak_hour,p_wait_gt_0,0.13508067811421548,1.6043075227144282e-13,7.000657983228688e-13,Reference only; not same metric as full-day P(W>15).
+Nanhu_Technology Park,22,analytical_peak_hour,p_wait_gt_0,0.12280061646746863,1.4946410321442697e-15,7.733325372647564e-15,Reference only; not same metric as full-day P(W>15).
+Nanhu_Technology Park,24,analytical_peak_hour,p_wait_gt_0,0.11256723176184624,1.1683545517187857e-17,7.167738933174078e-17,Reference only; not same metric as full-day P(W>15).
+Nanhu_Technology Park,26,analytical_peak_hour,p_wait_gt_0,0.10390821393401191,7.770665913772279e-20,5.652543370551598e-19,Reference only; not same metric as full-day P(W>15).
+Nanhu_Technology Park,28,analytical_peak_hour,p_wait_gt_0,0.09648619865301106,4.450083116885059e-22,3.83823825704789e-21,Reference only; not same metric as full-day P(W>15).
+Nanhu_Technology Park,30,analytical_peak_hour,p_wait_gt_0,0.09005378540947699,2.217082802376549e-24,2.2673776535335428e-23,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Government Agency,4,analytical_peak_hour,p_wait_gt_0,0.9533188884169602,0.858666333841485,0.8720355330079557,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Government Agency,6,analytical_peak_hour,p_wait_gt_0,0.6355459256113069,0.1418824859407505,0.1700225105680521,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Government Agency,8,analytical_peak_hour,p_wait_gt_0,0.4766594442084801,0.0168297702789005,0.0237970823310422,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Government Agency,10,analytical_peak_hour,p_wait_gt_0,0.3813275553667841,0.0014234059893106,0.0023748829172215,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Government Agency,12,analytical_peak_hour,p_wait_gt_0,0.3177729628056534,8.75482982516725e-05,0.0001723570344338,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Government Agency,14,analytical_peak_hour,p_wait_gt_0,0.27237682526198864,4.036321312976683e-06,9.376374065712151e-06,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Government Agency,16,analytical_peak_hour,p_wait_gt_0,0.23832972210424005,1.437771162139965e-07,3.941003785327576e-07,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Government Agency,18,analytical_peak_hour,p_wait_gt_0,0.21184864187043562,4.063505952159012e-09,1.3142738693345706e-08,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Government Agency,20,analytical_peak_hour,p_wait_gt_0,0.19066377768339204,9.319081429283972e-11,3.5565258461524215e-10,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Government Agency,22,analytical_peak_hour,p_wait_gt_0,0.17333070698490186,1.767272236484351e-12,7.958371475717471e-12,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Government Agency,24,analytical_peak_hour,p_wait_gt_0,0.1588864814028267,2.8158967175848742e-14,1.496254133969015e-13,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Government Agency,26,analytical_peak_hour,p_wait_gt_0,0.14666444437184004,3.821318951420325e-16,2.3959062448463376e-15,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Government Agency,28,analytical_peak_hour,p_wait_gt_0,0.13618841263099432,4.4685586301080175e-18,3.30591651029001e-17,Reference only; not same metric as full-day P(W>15).
+Xiuzhou_Government Agency,30,analytical_peak_hour,p_wait_gt_0,0.12710918512226135,4.548649377476645e-20,3.9707703653788673e-19,Reference only; not same metric as full-day P(W>15).
+Tongxiang_Bus Station,8,analytical_peak_hour,p_wait_gt_0,0.7571980904360056,0.2369740773976262,0.2758898517431785,Reference only; not same metric as full-day P(W>15).
+Tongxiang_Bus Station,10,analytical_peak_hour,p_wait_gt_0,0.6057584723488046,0.0430108960248034,0.0585606549895103,Reference only; not same metric as full-day P(W>15).
+Tongxiang_Bus Station,12,analytical_peak_hour,p_wait_gt_0,0.5047987269573371,0.0061157524521603,0.0097380025606193,Reference only; not same metric as full-day P(W>15).
+Tongxiang_Bus Station,14,analytical_peak_hour,p_wait_gt_0,0.4326846231062889,0.0006807819223235,0.0012677118558475,Reference only; not same metric as full-day P(W>15).
+Tongxiang_Bus Station,16,analytical_peak_hour,p_wait_gt_0,0.3785990452180028,5.9981233369875325e-05,0.0001306232483492,Reference only; not same metric as full-day P(W>15).
+Tongxiang_Bus Station,18,analytical_peak_hour,p_wait_gt_0,0.33653248463822477,4.251145322503835e-06,1.082688664835632e-05,Reference only; not same metric as full-day P(W>15).
+Tongxiang_Bus Station,20,analytical_peak_hour,p_wait_gt_0,0.3028792361744023,2.465375992442868e-07,7.34299702154378e-07,Reference only; not same metric as full-day P(W>15).
+Tongxiang_Bus Station,22,analytical_peak_hour,p_wait_gt_0,0.27534476015854753,1.1886829767445041e-08,4.1404618122498815e-08,Reference only; not same metric as full-day P(W>15).
+Tongxiang_Bus Station,24,analytical_peak_hour,p_wait_gt_0,0.25239936347866854,4.833224309306301e-10,1.9688482422933404e-09,Reference only; not same metric as full-day P(W>15).
+Tongxiang_Bus Station,26,analytical_peak_hour,p_wait_gt_0,0.2329840278264633,1.6781742647014804e-11,7.994750202370658e-11,Reference only; not same metric as full-day P(W>15).
+Tongxiang_Bus Station,28,analytical_peak_hour,p_wait_gt_0,0.21634231155314446,5.030851261083903e-13,2.8028629972323277e-12,Reference only; not same metric as full-day P(W>15).
+Tongxiang_Bus Station,30,analytical_peak_hour,p_wait_gt_0,0.20191949078293484,1.3147710305255764e-14,8.566493108406633e-14,Reference only; not same metric as full-day P(W>15).

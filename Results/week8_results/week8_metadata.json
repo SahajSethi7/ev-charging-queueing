@@ -1,0 +1,65 @@
+{
+  "week": 8,
+  "components": [
+    "8B: Representative Day Extraction",
+    "8C: MILP Scheduling",
+    "8D: FCFS Replay + Comparison",
+    "8A: TOU Costing",
+    "8X: Benchmark Power Sensitivity"
+  ],
+  "design_decisions": {
+    "primary_comparison": "Same sessions, same fleet size, same day. FCFS replay vs LP schedule.",
+    "fault_exclusion": "Faulted sessions excluded from BOTH FCFS and LP. s* from Week 6 faults-ON frontier.",
+    "lp_objective": "Minimize TOU energy cost; delay is a 1e-6 tie-breaker only.",
+    "tou_costing": "Validated 24-hour TOU price at service start hour only. No multi-hour proration.",
+    "tou_price_lookup": {
+      "0": 0.37840000000000007,
+      "1": 0.3784,
+      "2": 0.3784,
+      "3": 0.3784,
+      "4": 0.3784,
+      "5": 0.3784,
+      "6": 0.37840000000000007,
+      "7": 0.37839999999999996,
+      "8": 0.9014000000000001,
+      "9": 0.9014,
+      "10": 0.9014,
+      "11": 0.3784,
+      "12": 0.3784,
+      "13": 0.9014,
+      "14": 0.9014,
+      "15": 0.9014,
+      "16": 0.9014,
+      "17": 0.9014,
+      "18": 0.9013999999999999,
+      "19": 1.2064,
+      "20": 1.2064,
+      "21": 0.9014,
+      "22": 0.3784,
+      "23": 0.3784
+    },
+    "fcfs_ordering": "arrival_time_min ascending, then session_id as tie-breaker.",
+    "slot_resolution": "30 min (48 slots per day)",
+    "lp_shift_window": "One-sided: arrival_slot <= t <= arrival_slot + max_shift_slots"
+  },
+  "representative_dates": {
+    "high_demand_summer_weekday": "2021-07-16",
+    "low_demand_winter_weekday": "2021-02-11",
+    "rainy_day": "2020-06-23",
+    "holiday": "2021-10-05",
+    "weekend": "2020-06-28"
+  },
+  "infeasible_days": [],
+  "files_produced": [
+    "representative_day_selection.json",
+    "representative_days.csv",
+    "lp_results.csv",
+    "fcfs_replay_results.csv",
+    "lp_vs_fcfs_comparison.csv",
+    "reduced_fleet_lp.csv",
+    "reduced_fleet_fcfs.csv",
+    "reduced_fleet_comparison.csv",
+    "benchmark_sensitivity.csv",
+    "week8_metadata.json"
+  ]
+}
