@@ -1,44 +1,79 @@
-# EV Charging Queueing and Operations Research
+# EV Charging Queueing, Simulation, and Operations
 
-This repository contains a reproducible research pipeline for analyzing EV-charging demand, queueing performance, charger faults, flexibility, scheduling, and demand-responsive charger activation. It uses the public Jiaxing charging-transactions dataset as the primary source and ACN-Data for limited cross-validation.
+An end-to-end study of how charging demand, service-time variability, equipment faults, and activation policies shape waiting times at public EV charging stations.
 
-The repository intentionally excludes raw and session-level datasets. It includes source code, tests, aggregate results, figures, and the lookup data used by the React simulator.
+The project combines queueing theory, machine-learning forecasts, discrete-event simulation, and optimization on 441,077 charging sessions from 13 stations in Jiaxing, China. Its central question is practical: **how many chargers should be available, and when should they be active, to maintain service quality without over-provisioning?**
 
-## Headline results
+## What this project covers
 
-- 441,077 Jiaxing charging sessions across 13 stations; overall observed fault rate 18.58%.
-- Poisson arrivals rejected at all 13 stations, with residual within-hour overdispersion.
-- XGBoost holdout performance: MAE 1.518, RMSE 2.256, and R² 0.508.
-- LSTM horizon-1 MAE 1.533; weather ablation changed MAE by only -0.35%.
-- 11.5% of analyzed sessions classified as likely flexible and 25.5% as likely or possibly flexible.
-- Cost-first LP scheduling increased mean wait by 19.47 minutes versus the zero-wait FCFS replay baseline.
-- Demand-responsive activation reduced active charger-hours by 21.8–32.7% while meeting the service target at three of four representative stations; the fourth required a one-charger-per-hour tuned margin.
-- The frontend's 10 exact-fleet validation configurations passed independent-seed SimPy checks.
+- Tests whether station arrivals are plausibly Poisson and estimates time-varying arrival rates.
+- Fits service-time distributions by charger type and compares analytical fleet-sizing approximations.
+- Benchmarks XGBoost and LSTM demand forecasts on a chronological holdout period.
+- Models charger faults as repair downtime with customer retries.
+- Estimates session flexibility and compares FCFS, cost-first LP, and greedy scheduling.
+- Evaluates full-capacity and demand-responsive activation policies with SimPy.
+- Exposes the precomputed simulation frontier through a React simulator.
 
-## Repository layout
+## Main findings
+
+| Finding | Result | Interpretation |
+|---|---:|---|
+| Dataset scale | 441,077 sessions, 13 stations | Large enough to expose station-level and temporal heterogeneity |
+| Arrival process | Poisson rejected at all 13 stations | Hourly NHPP rates are useful, but residual overdispersion remains |
+| XGBoost forecast | MAE 1.518, RMSE 2.256, R^2 0.508 | 21.2% lower MAE than last-week-same-hour |
+| LSTM forecast | Horizon-1 MAE 1.533 | About 1.0% worse than XGBoost; added complexity did not pay off |
+| Weather ablation | -0.35% MAE change | Weather contributed little beyond temporal demand features |
+| Flexibility proxy | 11.5% likely; 25.5% likely or possible | A meaningful but limited scheduling opportunity |
+| Cost-first LP | +19.47 min mean wait vs. FCFS | Lower charging cost did not imply acceptable service quality |
+| Fault tax | +2 chargers only at Gov Agency | Fault exposure was operationally material at one representative station |
+| Historical activation | 21.8-32.7% fewer active charger-hours | Service target met at three of four stations with the base heuristic |
+| Simulator validation | 10/10 exact-fleet checks passed | Lookup results agreed with independent-seed SimPy runs |
+
+![Activation frontier for the representative government-agency station](Results/week9_results/figures/capstone_frontier_XZ_Gov.png)
+
+The red line marks the target `P(wait > 15 min) = 5%`. The activation policy reduces active charger-hours substantially, while the full simulation remains the binding service-quality check.
+
+## Study design
 
 ```text
-Code/                 Weekly analysis and simulation scripts
-Results/              Aggregate tables, figures, and validation outputs
-tests/                Regression tests for simulation and scheduling
-my-appcd/              React/Vite lookup-based simulator
-requirements.txt       Bounded Python dependencies
-DATA_ACCESS.md         Dataset sources and redistribution guidance
-NOTICE.md              Third-party and licensing notices
+Raw sessions
+    -> quality checks and station-hour aggregation
+    -> arrival and service-time models
+    -> analytical fleet-sizing screens
+    -> XGBoost and LSTM forecasting
+    -> SimPy fault and capacity simulation
+    -> flexibility and scheduling policies
+    -> activation frontiers and independent validation
+    -> React lookup simulator
 ```
 
-## Data access
+Analytical M/M/s and M/G/s calculations are treated as screening tools. Reported service levels come from full-day simulations with a seven-day warm-up, independent random-number streams, customer-level retry identity, and 50 replications per configuration.
 
-Download source data from the original providers; do not expect a `Data/` directory in this repository.
+## Explore the repository
 
-1. Jiaxing EV charging transactions: [Figshare dataset, version 3](https://doi.org/10.6084/m9.figshare.28182251.v3). The associated article is [A high-resolution electric vehicle charging transaction dataset with multidimensional features in China](https://doi.org/10.1038/s41597-025-04982-1).
-2. ACN-Data: use the [official Caltech portal](https://ev.caltech.edu/dataset.html). Registration requires agreement to educational/research use.
+| Path | Contents |
+|---|---|
+| [`Code/`](Code/) | Weekly analysis, forecasting, simulation, optimization, and export scripts |
+| [`Results/`](Results/) | Aggregate tables, validation outputs, and publication-ready figures |
+| [`tests/`](tests/) | Simulation and scheduling regression tests |
+| [`my-appcd/`](my-appcd/) | React/Vite simulator using exact precomputed fleet sizes |
+| [`DATA_ACCESS.md`](DATA_ACCESS.md) | Dataset sources and reproduction requirements |
 
-Place authorized downloads in `Data/` using the filenames expected by the scripts. See [DATA_ACCESS.md](DATA_ACCESS.md) for details.
+## Run the simulator
 
-## Python setup
+```powershell
+cd my-appcd
+npm ci
+npm run dev
+```
 
-Python 3.11–3.12 is recommended.
+Open the local Vite URL shown in the terminal. The interface lets you compare stations, fleet sizes, fault settings, and activation modes. Unsupported fleet sizes are not interpolated.
+
+## Reproduce the analysis
+
+### 1. Install Python dependencies
+
+Python 3.11 or 3.12 is recommended.
 
 ```powershell
 python -m venv .venv
@@ -46,11 +81,15 @@ python -m venv .venv
 python -m pip install -r requirements.txt
 ```
 
-Week 5 defaults to CUDA for LSTM training. Use `--device auto` or `--device cpu` when CUDA is unavailable. Install the appropriate PyTorch build for your hardware separately if required.
+Week 5 uses CUDA by default for LSTM training. Pass `--device auto` or `--device cpu` when a CUDA-capable GPU is unavailable.
 
-## Pipeline
+### 2. Obtain the data
 
-Run scripts from the repository root. Their defaults use `Data/` and `Results/weekN_results/`.
+The primary dataset is available from [Figshare](https://doi.org/10.6084/m9.figshare.28182251.v3). ACN-Data is available through the [Caltech portal](https://ev.caltech.edu/dataset.html). Place authorized downloads in `Data/` as described in [`DATA_ACCESS.md`](DATA_ACCESS.md).
+
+### 3. Run the pipeline
+
+Scripts are ordered by study week and use canonical `Data/` and `Results/weekN_results/` paths.
 
 ```powershell
 python Code/ingest_jiaxing.py
@@ -67,30 +106,20 @@ python Code/week10_validation.py
 python Code/export_simulator_data.py
 ```
 
-Some stages are computationally expensive. The checked-in aggregate outputs allow inspection of the reported results without rerunning the complete pipeline.
+The complete pipeline is computationally expensive; aggregate outputs are included so the findings can be inspected without rerunning every simulation.
 
-## Tests
+### 4. Run regression tests
 
 ```powershell
 python -m pytest
 ```
 
-The test suite covers fleet-independent exogenous arrivals, customer identity across fault retries, and Week 8 arrival/scheduling constraints.
+The tests cover fleet-independent exogenous arrivals, customer identity across fault retries, and arrival constraints in the Week 8 scheduler.
 
-## Frontend
+## Data scope
 
-```powershell
-cd my-appcd
-npm ci
-npm run dev
-```
+This repository publishes aggregate research outputs rather than raw or session-level records. Refer to [`DATA_ACCESS.md`](DATA_ACCESS.md) and [`NOTICE.md`](NOTICE.md) for dataset attribution and usage terms.
 
-The simulator reads `my-appcd/public/simulator-data.json` and exposes only exact precomputed fleet sizes; it does not interpolate unsupported configurations.
+## License
 
-## Privacy and reproducibility
-
-Only aggregate outputs are published here. Files containing per-session identifiers, exact session records, payment fields, user inputs, or machine-specific absolute paths are intentionally excluded. Provenance hashes in the private research workspace were used for verification, while public documentation uses repository-relative paths.
-
-## Licence
-
-The software source is released under the MIT License. Dataset rights remain with their respective providers, and the software licence does not grant rights to redistribute either source dataset. See [NOTICE.md](NOTICE.md).
+Original software is available under the [MIT License](LICENSE). Source-dataset rights remain with their respective providers.
